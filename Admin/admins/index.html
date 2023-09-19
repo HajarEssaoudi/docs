@@ -1,0 +1,1881 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../dashboard/">
+      
+      
+        <link rel="next" href="../clients/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
+    
+    
+      
+        <title>admins - InfyInvoices</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#admins-page" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="InfyInvoices" class="md-header__button md-logo" aria-label="InfyInvoices" data-md-component="logo">
+      
+  <img src="../../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            InfyInvoices
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              admins
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../Login/" class="md-tabs__link">
+      Authentication page
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../dashboard/" class="md-tabs__link md-tabs__link--active">
+        Admin
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Client/dashboard/" class="md-tabs__link">
+        Client
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../layout/" class="md-tabs__link">
+      Layout
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="InfyInvoices" class="md-nav__button md-logo" aria-label="InfyInvoices" data-md-component="logo">
+      
+  <img src="../../logo.png" alt="logo">
+
+    </a>
+    InfyInvoices
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Login/" class="md-nav__link">
+        Authentication page
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Admin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Admin
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dashboard/" class="md-nav__link">
+        Dashboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          admins
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        admins
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#route" class="md-nav__link">
+    Route
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controller" class="md-nav__link">
+    Controller
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model" class="md-nav__link">
+    Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#views" class="md-nav__link">
+    Views
+  </a>
+  
+    <nav class="md-nav" aria-label="Views">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-livewire-user-table" class="md-nav__link">
+    The livewire: user table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-of-admins" class="md-nav__link">
+    List of admins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-admin" class="md-nav__link">
+    Add admin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-admin" class="md-nav__link">
+    Edit admin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-details-of-admin" class="md-nav__link">
+    Show details of admin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clients/" class="md-nav__link">
+        clients
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../categories/" class="md-nav__link">
+        categories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Taxes/" class="md-nav__link">
+        Taxes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Products/" class="md-nav__link">
+        Products
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quotes/" class="md-nav__link">
+        Quotes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../invoices/" class="md-nav__link">
+        invoices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Transactions/" class="md-nav__link">
+        Transactions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Payments/" class="md-nav__link">
+        Payments
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../InvoiceTemplates/" class="md-nav__link">
+        Invoice Templates
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Settings/" class="md-nav__link">
+        Settings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Client
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Client
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Client/dashboard/" class="md-nav__link">
+        Dashboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Client/quotes/" class="md-nav__link">
+        Quotes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Client/invoices/" class="md-nav__link">
+        Invoices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Client/transactions/" class="md-nav__link">
+        Transactions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layout/" class="md-nav__link">
+        Layout
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="admins-page">admins page</h1>
+<h2 id="route">Route</h2>
+<p>The route <code>Route::resource('users', UserController::class);</code> leads to the page <strong>/admin/users</strong>, which desplays all the other admins accounts.</p>
+<h2 id="controller">Controller</h2>
+<p>The controller of the 'list of admins' page located in <strong>app&gt;http&gt;controllers&gt;userController.php</strong></p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="k">namespace</span> <span class="nx">App\Http\Controllers</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nx">App\Http\Requests\CreateUserRequest</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">App\Http\Requests\UpdateChangePasswordRequest</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">App\Http\Requests\UpdateUserProfileRequest</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">App\Http\Requests\UpdateUserRequest</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">App\Models\User</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">App\Repositories\UserRepository</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Exception</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Contracts\Foundation\Application</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Contracts\View\Factory</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Contracts\View\View</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Http\JsonResponse</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Http\RedirectResponse</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Http\Request</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Routing\Redirector</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Support\Facades\Auth</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Support\Facades\Hash</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Laracasts\Flash\Flash</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Symfony\Component\HttpKernel\Exception\UnprocessableEntityHttpException</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">UserController</span> <span class="k">extends</span> <span class="nx">AppBaseController</span>
+<span class="p">{</span>
+    <span class="sd">/**</span>
+<span class="sd">     * @var UserRepository</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="nv">$userRepository</span><span class="p">;</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * UserController constructor.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @param  UserRepository  $userRepository</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nx">UserRepository</span> <span class="nv">$userRepository</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">userRepository</span> <span class="o">=</span> <span class="nv">$userRepository</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * @return Application|Factory|View</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;users.index&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * Show the form for creating a new User.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @return Application|Factory|View</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">create</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;users.create&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * Store a newly created User in storage.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @param  CreateUserRequest  $request</span>
+<span class="sd">     * @return Application|Redirector|RedirectResponse</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">store</span><span class="p">(</span><span class="nx">CreateUserRequest</span> <span class="nv">$request</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$input</span> <span class="o">=</span> <span class="nv">$request</span><span class="o">-&gt;</span><span class="na">all</span><span class="p">();</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">userRepository</span><span class="o">-&gt;</span><span class="na">store</span><span class="p">(</span><span class="nv">$input</span><span class="p">);</span>
+            <span class="nx">Flash</span><span class="o">::</span><span class="na">success</span><span class="p">(</span><span class="s1">&#39;Admin created successfully.&#39;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$exception</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">Flash</span><span class="o">::</span><span class="na">error</span><span class="p">(</span><span class="nv">$exception</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">());</span>
+
+            <span class="k">return</span> <span class="nx">redirect</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">route</span><span class="p">(</span><span class="s1">&#39;users.create&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">withInput</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="nx">redirect</span><span class="p">(</span><span class="nx">route</span><span class="p">(</span><span class="s1">&#39;users.index&#39;</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * @param  User  $user</span>
+<span class="sd">     * @return Application|Factory|View</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">show</span><span class="p">(</span><span class="nx">User</span> <span class="nv">$user</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">load</span><span class="p">(</span><span class="s1">&#39;media&#39;</span><span class="p">);</span>
+
+        <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;users.show&#39;</span><span class="p">,</span> <span class="nb">compact</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * Show the form for editing the specified User.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @param  User  $user</span>
+<span class="sd">     * @return Application|Factory|View</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">edit</span><span class="p">(</span><span class="nx">User</span> <span class="nv">$user</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">load</span><span class="p">(</span><span class="s1">&#39;media&#39;</span><span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$user</span><span class="o">-&gt;</span><span class="na">is_default_admin</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">Flash</span><span class="o">::</span><span class="na">error</span><span class="p">(</span><span class="s1">&#39;Default admin can not editable.&#39;</span><span class="p">);</span>
+
+            <span class="k">return</span> <span class="nx">redirect</span><span class="p">(</span><span class="nx">route</span><span class="p">(</span><span class="s1">&#39;users.index&#39;</span><span class="p">));</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;users.edit&#39;</span><span class="p">,</span> <span class="nb">compact</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * Update the specified User in storage.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @param  UpdateUserRequest  $request</span>
+<span class="sd">     * @param  User  $user</span>
+<span class="sd">     * @return Application|RedirectResponse|Redirector</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">update</span><span class="p">(</span><span class="nx">UpdateUserRequest</span> <span class="nv">$request</span><span class="p">,</span> <span class="nx">User</span> <span class="nv">$user</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">userRepository</span><span class="o">-&gt;</span><span class="na">update</span><span class="p">(</span><span class="nv">$request</span><span class="o">-&gt;</span><span class="na">all</span><span class="p">(),</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">);</span>
+            <span class="nx">Flash</span><span class="o">::</span><span class="na">success</span><span class="p">(</span><span class="s1">&#39;Admin updated successfully.&#39;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$exception</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">Flash</span><span class="o">::</span><span class="na">error</span><span class="p">(</span><span class="nv">$exception</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">());</span>
+
+            <span class="k">return</span> <span class="nx">redirect</span><span class="p">(</span><span class="nx">route</span><span class="p">(</span><span class="s1">&#39;users.edit&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;user&#39;</span> <span class="o">=&gt;</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">]))</span><span class="o">-&gt;</span><span class="na">withInput</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="nx">redirect</span><span class="p">(</span><span class="nx">route</span><span class="p">(</span><span class="s1">&#39;users.index&#39;</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * Remove the specified User from storage.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @param  User  $user</span>
+<span class="sd">     * @return JsonResponse</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">destroy</span><span class="p">(</span><span class="nx">User</span> <span class="nv">$user</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$user</span><span class="o">-&gt;</span><span class="na">is_default_admin</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">sendError</span><span class="p">(</span><span class="s1">&#39;Admin can\&#39;t be deleted.&#39;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">delete</span><span class="p">();</span>
+
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">sendSuccess</span><span class="p">(</span><span class="s1">&#39;Admin deleted successfully.&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * @return Application|Factory|View</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">editProfile</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$user</span> <span class="o">=</span> <span class="nx">Auth</span><span class="o">::</span><span class="na">user</span><span class="p">();</span>
+
+        <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;profile.index&#39;</span><span class="p">,</span> <span class="nb">compact</span><span class="p">(</span><span class="s1">&#39;user&#39;</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * @param  UpdateUserProfileRequest  $request</span>
+<span class="sd">     * @return Application</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">updateProfile</span><span class="p">(</span><span class="nx">UpdateUserProfileRequest</span> <span class="nv">$request</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">userRepository</span><span class="o">-&gt;</span><span class="na">updateProfile</span><span class="p">(</span><span class="nv">$request</span><span class="o">-&gt;</span><span class="na">all</span><span class="p">());</span>
+        <span class="nx">Flash</span><span class="o">::</span><span class="na">success</span><span class="p">(</span><span class="s1">&#39;Admin profile updated successfully.&#39;</span><span class="p">);</span>
+
+        <span class="k">return</span> <span class="nx">redirect</span><span class="p">(</span><span class="nx">route</span><span class="p">(</span><span class="s1">&#39;profile.setting&#39;</span><span class="p">));</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * @param  UpdateChangePasswordRequest  $request</span>
+<span class="sd">     * @return JsonResponse</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">changePassword</span><span class="p">(</span><span class="nx">UpdateChangePasswordRequest</span> <span class="nv">$request</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$input</span> <span class="o">=</span> <span class="nv">$request</span><span class="o">-&gt;</span><span class="na">all</span><span class="p">();</span>
+
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="sd">/** @var User $user */</span>
+            <span class="nv">$user</span> <span class="o">=</span> <span class="nx">Auth</span><span class="o">::</span><span class="na">user</span><span class="p">();</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="nx">Hash</span><span class="o">::</span><span class="na">check</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">&#39;current_password&#39;</span><span class="p">],</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">password</span><span class="p">))</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">sendError</span><span class="p">(</span><span class="s1">&#39;Current password is invalid.&#39;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="nv">$input</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">Hash</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nv">$input</span><span class="p">[</span><span class="s1">&#39;new_password&#39;</span><span class="p">]);</span>
+            <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">update</span><span class="p">(</span><span class="nv">$input</span><span class="p">);</span>
+
+            <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">sendSuccess</span><span class="p">(</span><span class="s1">&#39;Password updated successfully.&#39;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nx">UnprocessableEntityHttpException</span><span class="p">(</span><span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * @param  User  $user</span>
+<span class="sd">     * @return JsonResponse</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">changeUserStatus</span><span class="p">(</span><span class="nx">User</span> <span class="nv">$user</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$status</span> <span class="o">=</span> <span class="o">!</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">status</span><span class="p">;</span>
+        <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">update</span><span class="p">([</span><span class="s1">&#39;status&#39;</span> <span class="o">=&gt;</span> <span class="nv">$status</span><span class="p">]);</span>
+
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">sendSuccess</span><span class="p">(</span><span class="s1">&#39;Status updated successfully.&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * @param  Request  $request</span>
+<span class="sd">     * @return JsonResponse</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">updateLanguage</span><span class="p">(</span><span class="nx">Request</span> <span class="nv">$request</span><span class="p">)</span><span class="o">:</span> <span class="nx">JsonResponse</span>
+    <span class="p">{</span>
+        <span class="nv">$language</span> <span class="o">=</span> <span class="nv">$request</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;language&#39;</span><span class="p">);</span>
+
+        <span class="nv">$user</span> <span class="o">=</span> <span class="nx">getLogInUser</span><span class="p">();</span>
+        <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">update</span><span class="p">([</span><span class="s1">&#39;language&#39;</span> <span class="o">=&gt;</span> <span class="nv">$language</span><span class="p">]);</span>
+
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">sendSuccess</span><span class="p">(</span><span class="s1">&#39;Language updated successfully.&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * @return RedirectResponse</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">updateDarkMode</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$user</span> <span class="o">=</span> <span class="nx">Auth</span><span class="o">::</span><span class="na">user</span><span class="p">();</span>
+        <span class="nv">$darkEnabled</span> <span class="o">=</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">dark_mode</span> <span class="o">==</span> <span class="k">true</span><span class="p">;</span>
+        <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">update</span><span class="p">([</span>
+            <span class="s1">&#39;dark_mode&#39;</span> <span class="o">=&gt;</span> <span class="o">!</span> <span class="nv">$darkEnabled</span><span class="p">,</span>
+        <span class="p">]);</span>
+
+        <span class="k">return</span> <span class="nx">redirect</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">back</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The UserController acts as an intermediary between incoming HTTP requests, the application's data storage (database), authentication system, and user interface. It ensures that user-related actions are executed securely, efficiently, and according to the business logic of the application. here's a brief explanation of each function in the UserController class along with its parameters and return values:</p>
+<ol>
+<li>
+<p><strong>index()</strong></p>
+</li>
+<li>
+<p>Purpose: Display a list of users.</p>
+</li>
+<li>Parameters: None.</li>
+<li>
+<p>Returns: Renders a view (<code>users.index</code>) to display the list of users.</p>
+</li>
+<li>
+<p><strong>create()</strong></p>
+</li>
+<li>
+<p>Purpose: Show a form for creating a new user.</p>
+</li>
+<li>Parameters: None.</li>
+<li>
+<p>Returns: Renders a view (<code>users.create</code>) for creating a new user.</p>
+</li>
+<li>
+<p><strong>store(CreateUserRequest $request)</strong></p>
+</li>
+<li>
+<p>Purpose: Store a new user in the database.</p>
+</li>
+<li>Parameters: <code>$request</code> (instance of <code>CreateUserRequest</code>).</li>
+<li>
+<p>Returns: Redirects to the index view (<code>users.index</code>) on success or back to the create view (<code>users.create</code>) on failure.</p>
+</li>
+<li>
+<p><strong>show(User $user)</strong></p>
+</li>
+<li>
+<p>Purpose: Display details of a specific user.</p>
+</li>
+<li>Parameters: <code>$user</code> (instance of <code>User</code> model).</li>
+<li>
+<p>Returns: Renders a view (<code>users.show</code>) to display the user details.</p>
+</li>
+<li>
+<p><strong>edit(User $user)</strong></p>
+</li>
+<li>
+<p>Purpose: Show a form for editing a user's information.</p>
+</li>
+<li>Parameters: <code>$user</code> (instance of <code>User</code> model).</li>
+<li>
+<p>Returns: Renders a view (<code>users.edit</code>) for editing the user's information.</p>
+</li>
+<li>
+<p><strong>update(UpdateUserRequest $request, User $user)</strong></p>
+</li>
+<li>
+<p>Purpose: Update a user's information in the database.</p>
+</li>
+<li>Parameters: <code>$request</code> (instance of <code>UpdateUserRequest</code>), <code>$user</code> (instance of <code>User</code> model).</li>
+<li>
+<p>Returns: Redirects to the index view (<code>users.index</code>) on success or back to the edit view (<code>users.edit</code>) on failure.</p>
+</li>
+<li>
+<p><strong>destroy(User $user)</strong></p>
+</li>
+<li>
+<p>Purpose: Delete a user from the database.</p>
+</li>
+<li>Parameters: <code>$user</code> (instance of <code>User</code> model).</li>
+<li>
+<p>Returns: JSON response with success message or error message.</p>
+</li>
+<li>
+<p><strong>editProfile()</strong></p>
+</li>
+<li>
+<p>Purpose: Show a form for editing the logged-in user's profile.</p>
+</li>
+<li>Parameters: None.</li>
+<li>
+<p>Returns: Renders a view (<code>profile.index</code>) to edit the user's profile.</p>
+</li>
+<li>
+<p><strong>updateProfile(UpdateUserProfileRequest $request)</strong></p>
+</li>
+<li>
+<p>Purpose: Update the logged-in user's profile information.</p>
+</li>
+<li>Parameters: <code>$request</code> (instance of <code>UpdateUserProfileRequest</code>).</li>
+<li>
+<p>Returns: Redirects to the profile settings view on success.</p>
+</li>
+<li>
+<p><strong>changePassword(UpdateChangePasswordRequest $request)</strong></p>
+<ul>
+<li>Purpose: Change the logged-in user's password.</li>
+<li>Parameters: <code>$request</code> (instance of <code>UpdateChangePasswordRequest</code>).</li>
+<li>Returns: JSON response with success message or error message.</li>
+</ul>
+</li>
+<li>
+<p><strong>changeUserStatus(User $user)</strong></p>
+<ul>
+<li>Purpose: Toggle the status (active/inactive) of a user.</li>
+<li>Parameters: <code>$user</code> (instance of <code>User</code> model).</li>
+<li>Returns: JSON response with success message.</li>
+</ul>
+</li>
+<li>
+<p><strong>updateLanguage(Request $request)</strong></p>
+<ul>
+<li>Purpose: Update the language preference of the logged-in user.</li>
+<li>Parameters: <code>$request</code> (instance of <code>Request</code>).</li>
+<li>Returns: JSON response with success message.</li>
+</ul>
+</li>
+<li>
+<p><strong>updateDarkMode()</strong></p>
+<ul>
+<li>Purpose: Toggle the dark mode setting for the logged-in user.</li>
+<li>Parameters: None.</li>
+<li>Returns: Redirects back to the previous page.</li>
+</ul>
+</li>
+</ol>
+<h2 id="model">Model</h2>
+<p>The model related to this controller is : <strong>App\Models\User</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="k">namespace</span> <span class="nx">App\Models</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nx">Eloquent</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Database\Eloquent\Builder</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Database\Eloquent\Collection</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Database\Eloquent\Factories\HasFactory</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Database\Eloquent\Relations\HasOne</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Foundation\Auth\User</span> <span class="k">as</span> <span class="nx">Authenticatable</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Notifications\DatabaseNotification</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Notifications\DatabaseNotificationCollection</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Notifications\Notifiable</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Support\Carbon</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Spatie\MediaLibrary\HasMedia</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Spatie\MediaLibrary\InteractsWithMedia</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Spatie\MediaLibrary\MediaCollections\Models\Media</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Spatie\Permission\Traits\HasRoles</span><span class="p">;</span>
+
+<span class="sd">/**</span>
+<span class="sd"> * App\Models\User</span>
+<span class="sd"> *</span>
+<span class="sd"> * @property int $id</span>
+<span class="sd"> * @property string $first_name</span>
+<span class="sd"> * @property string $last_name</span>
+<span class="sd"> * @property string $email</span>
+<span class="sd"> * @property string|null $contact</span>
+<span class="sd"> * @property string|null $region_code</span>
+<span class="sd"> * @property int $status</span>
+<span class="sd"> * @property string|null $language</span>
+<span class="sd"> * @property int $dark_mode</span>
+<span class="sd"> * @property Carbon|null $email_verified_at</span>
+<span class="sd"> * @property string $password</span>
+<span class="sd"> * @property string|null $remember_token</span>
+<span class="sd"> * @property Carbon|null $created_at</span>
+<span class="sd"> * @property Carbon|null $updated_at</span>
+<span class="sd"> * @property-read \App\Models\Client|null $client</span>
+<span class="sd"> * @property-read string $full_name</span>
+<span class="sd"> * @property-read string $profile_image</span>
+<span class="sd"> * @property-read mixed $role_name</span>
+<span class="sd"> * @property-read MediaCollection|Media[] $media</span>
+<span class="sd"> * @property-read int|null $media_count</span>
+<span class="sd"> * @property-read DatabaseNotificationCollection|DatabaseNotification[] $notifications</span>
+<span class="sd"> * @property-read int|null $notifications_count</span>
+<span class="sd"> * @property-read Collection|\Spatie\Permission\Models\Permission[] $permissions</span>
+<span class="sd"> * @property-read int|null $permissions_count</span>
+<span class="sd"> * @property-read Collection|\Spatie\Permission\Models\Role[] $roles</span>
+<span class="sd"> * @property-read int|null $roles_count</span>
+<span class="sd"> *</span>
+<span class="sd"> * @method static \Database\Factories\UserFactory factory(...$parameters)</span>
+<span class="sd"> * @method static Builder|User newModelQuery()</span>
+<span class="sd"> * @method static Builder|User newQuery()</span>
+<span class="sd"> * @method static Builder|User permission($permissions)</span>
+<span class="sd"> * @method static Builder|User query()</span>
+<span class="sd"> * @method static Builder|User role($roles, $guard = null)</span>
+<span class="sd"> * @method static Builder|User whereContact($value)</span>
+<span class="sd"> * @method static Builder|User whereCreatedAt($value)</span>
+<span class="sd"> * @method static Builder|User whereDarkMode($value)</span>
+<span class="sd"> * @method static Builder|User whereEmail($value)</span>
+<span class="sd"> * @method static Builder|User whereEmailVerifiedAt($value)</span>
+<span class="sd"> * @method static Builder|User whereFirstName($value)</span>
+<span class="sd"> * @method static Builder|User whereId($value)</span>
+<span class="sd"> * @method static Builder|User whereLanguage($value)</span>
+<span class="sd"> * @method static Builder|User whereLastName($value)</span>
+<span class="sd"> * @method static Builder|User wherePassword($value)</span>
+<span class="sd"> * @method static Builder|User whereRegionCode($value)</span>
+<span class="sd"> * @method static Builder|User whereRememberToken($value)</span>
+<span class="sd"> * @method static Builder|User whereStatus($value)</span>
+<span class="sd"> * @method static Builder|User whereUpdatedAt($value)</span>
+<span class="sd"> * @mixin Eloquent</span>
+<span class="sd"> *</span>
+<span class="sd"> * @property int $is_default_admin</span>
+<span class="sd"> *</span>
+<span class="sd"> * @method static Builder|User whereIsDefaultAdmin($value)</span>
+<span class="sd"> */</span>
+<span class="k">class</span> <span class="nc">User</span> <span class="k">extends</span> <span class="nx">Authenticatable</span> <span class="k">implements</span> <span class="nx">HasMedia</span>
+<span class="p">{</span>
+    <span class="k">use</span> <span class="nx">HasFactory</span><span class="p">,</span> <span class="nx">Notifiable</span><span class="p">,</span> <span class="nx">InteractsWithMedia</span><span class="p">,</span> <span class="nx">HasRoles</span><span class="p">;</span>
+
+    <span class="k">protected</span> <span class="nv">$table</span> <span class="o">=</span> <span class="s1">&#39;users&#39;</span><span class="p">;</span>
+
+    <span class="k">const</span> <span class="no">PROFILE</span> <span class="o">=</span> <span class="s1">&#39;profile&#39;</span><span class="p">;</span>
+
+    <span class="k">const</span> <span class="no">ADMIN</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+    <span class="k">const</span> <span class="no">CLIENT</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+
+    <span class="k">const</span> <span class="no">LANGUAGES</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;en&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;English&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;es&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Spanish&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fr&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;French&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;de&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;German&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ru&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Russian&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;pt&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Portuguese&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ar&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Arabic&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;zh&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Chinese&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;tr&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Turkish&#39;</span><span class="p">,</span>
+    <span class="p">];</span>
+
+    <span class="k">const</span> <span class="no">LANGUAGES_IMAGE</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;en&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;web/media/flags/united-states.svg&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;es&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;web/media/flags/spain.svg&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;fr&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;web/media/flags/france.svg&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;de&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;web/media/flags/germany.svg&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ru&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;web/media/flags/russia.svg&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;pt&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;web/media/flags/portugal.svg&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ar&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;web/media/flags/iraq.svg&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;zh&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;web/media/flags/china.svg&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;tr&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;web/media/flags/turkey.svg&#39;</span><span class="p">,</span>
+    <span class="p">];</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * The attributes that are mass assignable.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @var array</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$fillable</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;first_name&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;last_name&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;email&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;contact&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;region_code&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;status&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;password&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;language&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;dark_mode&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;is_default_admin&#39;</span><span class="p">,</span>
+    <span class="p">];</span>
+
+    <span class="k">protected</span> <span class="nv">$appends</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;full_name&#39;</span><span class="p">,</span> <span class="s1">&#39;profile_image&#39;</span><span class="p">];</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * The attributes that should be hidden for arrays.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @var array</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$hidden</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;password&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;remember_token&#39;</span><span class="p">,</span>
+    <span class="p">];</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="nv">$rules</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;first_name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;required&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;last_name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;required&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;email&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;required|email:filter|unique:users,email&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;password&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;required|same:password_confirmation|min:6&#39;</span><span class="p">,</span>
+    <span class="p">];</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * The attributes that should be cast to native types.</span>
+<span class="sd">     *</span>
+<span class="sd">     * @var array</span>
+<span class="sd">     */</span>
+    <span class="k">protected</span> <span class="nv">$casts</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;first_name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;last_name&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;email&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;contact&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;region_code&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;status&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;integer&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;language&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;dark_mode&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;integer&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;email_verified_at&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;datetime&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;password&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;remember_token&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;string&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;is_default_admin&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;integer&#39;</span><span class="p">,</span>
+    <span class="p">];</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * @return string</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">getProfileImageAttribute</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="sd">/** @var Media $media */</span>
+        <span class="nv">$media</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getMedia</span><span class="p">(</span><span class="nx">self</span><span class="o">::</span><span class="na">PROFILE</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">first</span><span class="p">();</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="k">empty</span><span class="p">(</span><span class="nv">$media</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nv">$media</span><span class="o">-&gt;</span><span class="na">getFullUrl</span><span class="p">();</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="nx">asset</span><span class="p">(</span><span class="s1">&#39;assets/images/avatar.png&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">getRoleNameAttribute</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nv">$role</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">roles</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">first</span><span class="p">();</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span> <span class="k">empty</span><span class="p">(</span><span class="nv">$role</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nv">$role</span><span class="o">-&gt;</span><span class="na">display_name</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * @return string</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">getFullNameAttribute</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">first_name</span><span class="o">.</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">last_name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * @return HasOne</span>
+<span class="sd">     */</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">client</span><span class="p">()</span><span class="o">:</span> <span class="nx">HasOne</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">hasOne</span><span class="p">(</span><span class="nx">Client</span><span class="o">::</span><span class="na">class</span><span class="p">,</span> <span class="s1">&#39;user_id&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>This model class named User within the App\Models namespace. The class extends Authenticatable, which is a base class provided by the Laravel framework for user authentication and authorization. It also implements the HasMedia interface from the Spatie Media Library package, which allows for easy handling of media files associated with the user.</p>
+<ol>
+<li>
+<p><strong>Namespace and Use Statements:</strong>
+   The code begins with a namespace declaration and several <code>use</code> statements to import various classes and traits that the <code>User</code> class will utilize. These include classes from Laravel's Eloquent ORM, notifications, and authentication components, as well as classes from the Spatie Media Library and Spatie Permission package.</p>
+</li>
+<li>
+<p><strong>Class Definition:</strong>
+   The <code>User</code> class is defined, extending Laravel's <code>Authenticatable</code> class and implementing the <code>HasMedia</code> interface provided by the Spatie Media Library. It uses several traits: <code>HasFactory</code>, <code>Notifiable</code>, <code>InteractsWithMedia</code>, and <code>HasRoles</code>.</p>
+</li>
+<li>
+<p><strong>Table Name and Attributes:</strong>
+   The <code>protected $table</code> property specifies the database table associated with the model (usually 'users'). The <code>$fillable</code> array lists attributes that can be mass-assigned when creating or updating a user. The <code>$hidden</code> array lists attributes that should be hidden when the model is converted to an array.</p>
+</li>
+<li>
+<p><strong>Constants:</strong>
+   The class defines several constants that appear to define user roles and languages. For example, <code>ADMIN</code> is set to 1 and <code>CLIENT</code> is set to 2, presumably representing different user roles within the application. <code>LANGUAGES</code> and <code>LANGUAGES_IMAGE</code> are arrays that map language codes to their respective names and flag image paths.</p>
+</li>
+<li>
+<p><strong>Casting and Validation Rules:</strong>
+   The <code>$casts</code> property defines how each attribute should be cast to native PHP types. The <code>$rules</code> array contains validation rules for creating a new user.</p>
+</li>
+<li>
+<p><strong>Accessors and Mutators:</strong>
+   The class defines various accessor methods that allow you to access modified attributes or computed properties. For instance, the <code>getProfileImageAttribute()</code> accessor returns the URL of the user's profile image. The <code>getRoleNameAttribute()</code> accessor retrieves the display name of the user's role, if they have one. The <code>getFullNameAttribute()</code> accessor combines the user's first and last names into a full name.</p>
+</li>
+<li>
+<p><strong>Relationships:</strong>
+   The <code>client()</code> method defines a one-to-one relationship between the <code>User</code> model and the <code>Client</code> model. This suggests that a user can be associated with a client in the application.</p>
+</li>
+</ol>
+<p>Overall, this code defines a powerful and feature-rich <code>User</code> model with functionality for handling roles, media (such as profile images), permissions, and relationships with other models. The model encapsulates various attributes and behaviors associated with users in the application, making it easier to manage user-related functionalities.</p>
+<p>The determination of the user role is managed through the Spatie Permissions package. The package allows you to assign roles to users and then use these roles to control access to different parts of the application.</p>
+<h2 id="views">Views</h2>
+<h3 id="the-livewire-user-table">The livewire: user table</h3>
+<p>The livewire of the 'user table' located in <strong>app&gt;http&gt;livewire&gt;ClientTable.php</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="k">namespace</span> <span class="nx">App\Http\Livewire</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nx">App\Models\Role</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">App\Models\User</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Database\Eloquent\Builder</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Illuminate\Support\Facades\Auth</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">Rappasoft\LaravelLivewireTables\Views\Column</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">UserTable</span> <span class="k">extends</span> <span class="nx">LivewireTableComponent</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$model</span> <span class="o">=</span> <span class="nx">User</span><span class="o">::</span><span class="na">class</span><span class="p">;</span>
+    <span class="k">protected</span> <span class="nx">string</span> <span class="nv">$tableName</span> <span class="o">=</span> <span class="s1">&#39;users&#39;</span><span class="p">;</span>
+
+    <span class="c1">// for table header button</span>
+    <span class="k">public</span> <span class="nv">$showButtonOnHeader</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+    <span class="k">public</span> <span class="nv">$buttonComponent</span> <span class="o">=</span> <span class="s1">&#39;users.table-components.add-button&#39;</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">configure</span><span class="p">()</span><span class="o">:</span> <span class="nx">void</span>
+    <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">setPrimaryKey</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">setPageName</span><span class="p">(</span><span class="s1">&#39;page&#39;</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">setDefaultSort</span><span class="p">(</span><span class="s1">&#39;created_at&#39;</span><span class="p">,</span> <span class="s1">&#39;desc&#39;</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">setQueryStringStatus</span><span class="p">(</span><span class="k">false</span><span class="p">);</span>
+
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">setThAttributes</span><span class="p">(</span><span class="k">function</span> <span class="p">(</span><span class="nx">Column</span> <span class="nv">$column</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nv">$column</span><span class="o">-&gt;</span><span class="na">getField</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;id&#39;</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="p">[</span>
+                    <span class="s1">&#39;style&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;width:9%;text-align:center&#39;</span><span class="p">,</span>
+                <span class="p">];</span>
+            <span class="p">}</span>
+
+            <span class="k">return</span> <span class="p">[];</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">columns</span><span class="p">()</span><span class="o">:</span> <span class="k">array</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="p">[</span>
+            <span class="nx">Column</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.common.name&#39;</span><span class="p">),</span> <span class="s1">&#39;first_name&#39;</span><span class="p">)</span>
+                <span class="o">-&gt;</span><span class="na">sortable</span><span class="p">()</span>
+                <span class="o">-&gt;</span><span class="na">searchable</span><span class="p">()</span>
+                <span class="o">-&gt;</span><span class="na">view</span><span class="p">(</span><span class="s1">&#39;users.table-components.full-name&#39;</span><span class="p">),</span>
+            <span class="nx">Column</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;last_name&#39;</span><span class="p">),</span> <span class="s1">&#39;last_name&#39;</span><span class="p">)</span>
+                <span class="o">-&gt;</span><span class="na">searchable</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">hideIf</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+            <span class="nx">Column</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.user.email&#39;</span><span class="p">),</span> <span class="s1">&#39;email&#39;</span><span class="p">)</span>
+                <span class="o">-&gt;</span><span class="na">searchable</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">hideIf</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+            <span class="nx">Column</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="s1">&#39;is_default_admin&#39;</span><span class="p">,</span> <span class="s1">&#39;is_default_admin&#39;</span><span class="p">)</span>
+                <span class="o">-&gt;</span><span class="na">searchable</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">hideIf</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>
+            <span class="nx">Column</span><span class="o">::</span><span class="na">make</span><span class="p">(</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.common.action&#39;</span><span class="p">),</span> <span class="s1">&#39;id&#39;</span><span class="p">)</span>
+                <span class="o">-&gt;</span><span class="na">format</span><span class="p">(</span><span class="k">function</span> <span class="p">(</span><span class="nv">$value</span><span class="p">,</span> <span class="nv">$row</span><span class="p">,</span> <span class="nx">Column</span> <span class="nv">$column</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="nx">view</span><span class="p">(</span><span class="s1">&#39;livewire.action-button&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">with</span><span class="p">([</span>
+                        <span class="s1">&#39;editRoute&#39;</span> <span class="o">=&gt;</span> <span class="nx">route</span><span class="p">(</span><span class="s1">&#39;users.edit&#39;</span><span class="p">,</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">),</span>
+                        <span class="s1">&#39;dataId&#39;</span> <span class="o">=&gt;</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">,</span>
+                        <span class="s1">&#39;row&#39;</span> <span class="o">=&gt;</span> <span class="nv">$row</span><span class="p">,</span>
+                        <span class="s1">&#39;editClass&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;user-edit-btn&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;deleteClass&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;user-delete-btn&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;isDefaultAdmin&#39;</span> <span class="o">=&gt;</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">is_default_admin</span><span class="p">,</span>
+                    <span class="p">]);</span>
+                <span class="p">}),</span>
+        <span class="p">];</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">builder</span><span class="p">()</span><span class="o">:</span> <span class="nx">Builder</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">User</span><span class="o">::</span><span class="na">where</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;!=&#39;</span><span class="p">,</span> <span class="nx">Auth</span><span class="o">::</span><span class="na">id</span><span class="p">())</span>
+            <span class="o">-&gt;</span><span class="na">whereHas</span><span class="p">(</span><span class="s1">&#39;roles&#39;</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$q</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nv">$q</span><span class="o">-&gt;</span><span class="na">where</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nx">Role</span><span class="o">::</span><span class="na">ROLE_ADMIN</span><span class="p">);</span>
+            <span class="p">})</span><span class="o">-&gt;</span><span class="na">with</span><span class="p">(</span><span class="s1">&#39;media&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>the UserTable Livewire component generates a dynamic table of user data, including columns for user name, last name, email, and actions (edit and delete buttons). It leverages the Rappasoft\LaravelLivewireTables package to handle table rendering, sorting, searching, and pagination. The component filters users based on their roles and includes media information for each user.</p>
+<h3 id="list-of-admins">List of admins</h3>
+<p>The view that displays the list of category located in : <strong>resources\views\users\index.blade.php</strong></p>
+<div class="highlight"><pre><span></span><code><span class="err">@</span><span class="k">extends</span><span class="p">(</span><span class="s1">&#39;layouts.app&#39;</span><span class="p">)</span>
+<span class="err">@</span><span class="nx">section</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{{</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.admins&#39;</span><span class="p">)}}</span>
+<span class="err">@</span><span class="nx">endsection</span>
+<span class="err">@</span><span class="nx">section</span><span class="p">(</span><span class="s1">&#39;content&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;container-fluid&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;d-flex flex-column&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="err">@</span><span class="nx">include</span><span class="p">(</span><span class="s1">&#39;flash::message&#39;</span><span class="p">)</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">livewire</span><span class="o">:</span><span class="nx">user</span><span class="o">-</span><span class="nx">table</span><span class="o">/&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="err">@</span><span class="nx">endsection</span>
+</code></pre></div>
+<p>Let's break down the code and its components:</p>
+<ol>
+<li>
+<p><strong>@extends('layouts.app')</strong>:
+   This line specifies that the view extends a layout template named 'app'. This means that the content of this view will be placed within the layout defined in a file named 'app.blade.php' located in the 'layouts' directory.</p>
+</li>
+<li>
+<p><strong>@section('title') ... @endsection</strong>:
+   This section defines the content that should be injected into the 'title' section of the layout. The content within these tags seems to be using Laravel's localization feature (<code>__('messages.admins')</code>) to display the translated string for the key 'messages.admins'. The exact title displayed will depend on the language settings and the translation files in the application.</p>
+</li>
+<li>
+<p><strong>@section('content') ... @endsection</strong>:
+   This section defines the main content of the view that will be injected into the 'content' section of the layout. The content of this section contains:</p>
+</li>
+<li>
+<p><strong><div class="container-fluid"></strong>:
+     This sets up a responsive container that spans the full width of the viewport. It's a common Bootstrap class used for layout.</p>
+</li>
+<li>
+<p><strong><div class="d-flex flex-column"></strong>:
+     This creates a flex container that arranges its children in a column layout. The children inside this container will be stacked vertically.</p>
+</li>
+<li>
+<p><strong>@include('flash::message')</strong>:
+     This includes another Blade view named 'flash::message'. This a flash message component or partial view responsible for displaying flash messages to users. Flash messages are typically used to display success, error, or informational messages temporarily after certain actions.</p>
+</li>
+<li>
+<p><strong><livewire:user-table/></strong>:
+     This uses Livewire's <code>livewire</code> directive to include a Livewire component named 'user-table'. Livewire is a Laravel package that allows you to build interactive UI components using a combination of PHP and frontend JavaScript. The 'user-table' component could be responsible for displaying and managing user data in a table format.</p>
+</li>
+</ol>
+<p>In summary, this Blade view extends a layout template named 'app', injecting content into the 'title' and 'content' sections of the layout. The main content includes a container, a vertically stacked column layout, a flash message display, and a Livewire component for managing user data in a table format. The use of the <code>livewire</code> directive suggests that the view incorporates real-time interactivity using Livewire components.</p>
+<h3 id="add-admin">Add admin</h3>
+<div class="highlight"><pre><span></span><code><span class="err">@</span><span class="k">extends</span><span class="p">(</span><span class="s1">&#39;layouts.app&#39;</span><span class="p">)</span>
+<span class="err">@</span><span class="nx">section</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{{</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.add_admin&#39;</span><span class="p">)}}</span>
+<span class="err">@</span><span class="nx">endsection</span>
+<span class="err">@</span><span class="nx">section</span><span class="p">(</span><span class="s1">&#39;content&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="err">@</span><span class="nx">php</span><span class="w"> </span><span class="nx">$styleCss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;style&#39;</span><span class="p">;</span><span class="w"> </span><span class="err">@</span><span class="nx">endphp</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;container-fluid&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="err">@</span><span class="nx">include</span><span class="p">(</span><span class="s1">&#39;flash::message&#39;</span><span class="p">)</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;d-flex flex-column&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;col-12&quot;</span><span class="o">&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;d-flex justify-content-between align-items-end mb-5&quot;</span><span class="o">&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="err">@</span><span class="k">yield</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="nx">a</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;btn btn-outline-primary float-end&quot;</span>
+<span class="w">                       </span><span class="nx">href</span><span class="o">=</span><span class="s2">&quot;{{ route(&#39;users.index&#39;) }}&quot;</span><span class="o">&gt;</span><span class="p">{{</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.common.back&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">}}</span><span class="o">&lt;</span><span class="err">/a&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;col-12&quot;</span><span class="o">&gt;</span>
+<span class="w">                    </span><span class="err">@</span><span class="nx">include</span><span class="p">(</span><span class="s1">&#39;layouts.errors&#39;</span><span class="p">)</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;card&quot;</span><span class="o">&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;card-body&quot;</span><span class="o">&gt;</span>
+<span class="w">                        </span><span class="p">{</span><span class="o">!!</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">open</span><span class="p">([</span><span class="s1">&#39;route&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;users.store&#39;</span><span class="p">,</span><span class="s1">&#39;files&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;true&#39;</span><span class="p">,</span><span class="s1">&#39;id&#39;</span><span class="p">=&gt;</span><span class="s1">&#39;userCreateForm&#39;</span><span class="p">])</span><span class="w"> </span><span class="o">!!</span><span class="p">}</span>
+<span class="w">                        </span><span class="err">@</span><span class="nx">include</span><span class="p">(</span><span class="s1">&#39;users.fields&#39;</span><span class="p">)</span>
+<span class="w">                        </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">close</span><span class="p">()</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">hidden</span><span class="p">(</span><span class="s1">&#39;is_edit&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">,[</span><span class="s1">&#39;id&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;isEdit&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="err">@</span><span class="nx">endsection</span>
+<span class="err">@</span><span class="nx">section</span><span class="p">(</span><span class="s1">&#39;phone_js&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="nx">phoneNo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{{ old(&#39;region_code&#39;).old(&#39;contact&#39;) }}&quot;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/script&gt;</span>
+<span class="err">@</span><span class="nx">endsection</span>
+<span class="err">@</span><span class="k">extends</span><span class="p">(</span><span class="s1">&#39;layouts.app&#39;</span><span class="p">)</span>
+<span class="err">@</span><span class="nx">section</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{{</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.add_admin&#39;</span><span class="p">)}}</span>
+<span class="err">@</span><span class="nx">endsection</span>
+<span class="err">@</span><span class="nx">section</span><span class="p">(</span><span class="s1">&#39;content&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="err">@</span><span class="nx">php</span><span class="w"> </span><span class="nx">$styleCss</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;style&#39;</span><span class="p">;</span><span class="w"> </span><span class="err">@</span><span class="nx">endphp</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;container-fluid&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="err">@</span><span class="nx">include</span><span class="p">(</span><span class="s1">&#39;flash::message&#39;</span><span class="p">)</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;d-flex flex-column&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;col-12&quot;</span><span class="o">&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;d-flex justify-content-between align-items-end mb-5&quot;</span><span class="o">&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="err">@</span><span class="k">yield</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span><span class="o">&lt;</span><span class="err">/h1&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="nx">a</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;btn btn-outline-primary float-end&quot;</span>
+<span class="w">                       </span><span class="nx">href</span><span class="o">=</span><span class="s2">&quot;{{ route(&#39;users.index&#39;) }}&quot;</span><span class="o">&gt;</span><span class="p">{{</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.common.back&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">}}</span><span class="o">&lt;</span><span class="err">/a&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;col-12&quot;</span><span class="o">&gt;</span>
+<span class="w">                    </span><span class="err">@</span><span class="nx">include</span><span class="p">(</span><span class="s1">&#39;layouts.errors&#39;</span><span class="p">)</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;card&quot;</span><span class="o">&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;card-body&quot;</span><span class="o">&gt;</span>
+<span class="w">                        </span><span class="p">{</span><span class="o">!!</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">open</span><span class="p">([</span><span class="s1">&#39;route&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;users.store&#39;</span><span class="p">,</span><span class="s1">&#39;files&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;true&#39;</span><span class="p">,</span><span class="s1">&#39;id&#39;</span><span class="p">=&gt;</span><span class="s1">&#39;userCreateForm&#39;</span><span class="p">])</span><span class="w"> </span><span class="o">!!</span><span class="p">}</span>
+<span class="w">                        </span><span class="err">@</span><span class="nx">include</span><span class="p">(</span><span class="s1">&#39;users.fields&#39;</span><span class="p">)</span>
+<span class="w">                        </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">close</span><span class="p">()</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">hidden</span><span class="p">(</span><span class="s1">&#39;is_edit&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="p">,[</span><span class="s1">&#39;id&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;isEdit&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="err">@</span><span class="nx">endsection</span>
+<span class="err">@</span><span class="nx">section</span><span class="p">(</span><span class="s1">&#39;phone_js&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="nx">phoneNo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;{{ old(&#39;region_code&#39;).old(&#39;contact&#39;) }}&quot;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/script&gt;</span>
+<span class="err">@</span><span class="nx">endsection</span>
+</code></pre></div>
+<p>Let's break down the code and its components:</p>
+<ol>
+<li>
+<p><strong>@extends('layouts.app')</strong>:
+   This line specifies that the view extends a layout template named 'app'. The content of this view will be placed within the layout defined in a file named 'app.blade.php' located in the 'layouts' directory.</p>
+</li>
+<li>
+<p><strong>@section('title') ... @endsection</strong>:
+   This section defines the content that should be injected into the 'title' section of the layout. The content within these tags appears to be using Laravel's localization feature (<code>__('messages.add_admin')</code>) to display the translated string for the key 'messages.add_admin'. This will set the title of the page to "Add Admin".</p>
+</li>
+<li>
+<p><strong>@section('content') ... @endsection</strong>:
+   This section defines the main content of the view that will be injected into the 'content' section of the layout. The content of this section contains:</p>
+</li>
+<li>
+<p><strong>@php $styleCss = 'style'; @endphp</strong>:
+     This line sets a PHP variable named <code>$styleCss</code> to the value 'style'. The purpose of this variable is not clear from the provided code snippet.</p>
+</li>
+<li>
+<p><strong><div class="container-fluid"></strong>:
+     This sets up a responsive container that spans the full width of the viewport. It's a common Bootstrap class used for layout.</p>
+</li>
+<li>
+<p><strong>@include('flash::message')</strong>:
+     This includes another Blade view named 'flash::message'. This could be a flash message component or partial view responsible for displaying flash messages to users.</p>
+</li>
+<li>
+<p><strong><div class="d-flex flex-column"></strong>:
+     This creates a flex container that arranges its children in a column layout. The children inside this container will be stacked vertically.</p>
+</li>
+<li>
+<p><strong><div class="col-12"></strong>:
+     This sets up a Bootstrap column with a width of 12 units (full width) within the flex container. It's used for arranging the main content of the view.</p>
+</li>
+<li>
+<p><strong><div class="d-flex justify-content-between align-items-end mb-5"></strong>:
+     This creates a flex container with space-between alignment for its children. Inside it, there's an <code>&lt;h1&gt;</code> element that displays the page title (<code>@yield('title')</code>) and a button for navigating back to the list of users.</p>
+</li>
+<li>
+<p><strong><div class="col-12"></strong>:
+     Another Bootstrap column is used to handle errors that might occur during form submission.</p>
+</li>
+<li>
+<p><strong><div class="card"> ... </div></strong>:
+     This wraps the content related to creating a new admin user in a Bootstrap card component. Inside the card body, a form is opened using Laravel's <code>Form::open()</code> method. The <code>route</code> parameter specifies the route to which the form will be submitted. The <code>@include('users.fields')</code> directive is including a Blade partial view that contains form fields for creating a new user.</p>
+</li>
+<li>
+<p><strong>{{ Form::hidden('is_edit', false ,['id' =&gt; 'isEdit']) }}</strong>:
+     This creates a hidden input field named 'is_edit' with the value 'false'. It is a hidden field for indicating whether the form is in edit mode.</p>
+</li>
+<li>
+<p><strong>@section('phone_js') ... @endsection</strong>:
+   This section defines JavaScript code to be injected into the 'phone_js' section of the layout. The JavaScript code initializes a <code>phoneNo</code> variable using the <code>old()</code> function with 'region_code' and 'contact' as parameters. This related to pre-filling phone number fields with previously submitted values.</p>
+</li>
+</ol>
+<p>Overall, this Blade view template is for creating a new admin user and provides a layout structure, form handling, error display, and JavaScript initialization for phone number fields. It's designed with Bootstrap classes and integrates with Laravel's form and localization features.</p>
+<h3 id="edit-admin">Edit admin</h3>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;row gx-10 mb-5&quot;</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;col-lg-6&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;mb-5&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">label</span><span class="p">(</span><span class="s1">&#39;first_name&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.client.first_name&#39;</span><span class="p">).</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;form-label required mb-3&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">            </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;first_name&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">isset</span><span class="p">(</span><span class="nx">$user</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">$user</span><span class="o">-&gt;</span><span class="nx">first_name</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;form-control form-control-solid&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;placeholder&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.client.first_name&#39;</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;required&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;col-lg-6&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;mb-5&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">label</span><span class="p">(</span><span class="s1">&#39;last_name&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.client.last_name&#39;</span><span class="p">).</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;form-label required mb-3&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">            </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">text</span><span class="p">(</span><span class="s1">&#39;last_name&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">isset</span><span class="p">(</span><span class="nx">$user</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">$user</span><span class="o">-&gt;</span><span class="nx">last_name</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;form-control form-control-solid&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;placeholder&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.client.last_name&#39;</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;required&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;col-lg-6&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;mb-5&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">label</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.client.email&#39;</span><span class="p">).</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;form-label required mb-3&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">            </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">email</span><span class="p">(</span><span class="s1">&#39;email&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">isset</span><span class="p">(</span><span class="nx">$user</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">$user</span><span class="o">-&gt;</span><span class="nx">email</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;form-control form-control-solid&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;placeholder&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.client.email&#39;</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;required&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;col-lg-6&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;mb-5&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">label</span><span class="p">(</span><span class="s1">&#39;contact&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.client.contact_no&#39;</span><span class="p">).</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;form-label mb-3&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">            </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">tel</span><span class="p">(</span><span class="s1">&#39;contact&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">$user</span><span class="o">-&gt;</span><span class="nx">contact</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="nx">getSettingValue</span><span class="p">(</span><span class="s1">&#39;country_code&#39;</span><span class="p">),</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;form-control form-control-solid&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;onkeyup&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,&quot;&quot;)&#39;</span><span class="p">,</span><span class="s1">&#39;id&#39;</span><span class="p">=&gt;</span><span class="s1">&#39;phoneNumber&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">            </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">hidden</span><span class="p">(</span><span class="s1">&#39;region_code&#39;</span><span class="p">,</span><span class="nx">isset</span><span class="p">(</span><span class="nx">$user</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">$user</span><span class="o">-&gt;</span><span class="nx">region_code</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,[</span><span class="s1">&#39;id&#39;</span><span class="p">=&gt;</span><span class="s1">&#39;prefix_code&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">span</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;valid-msg&quot;</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;hide text-success fw-400 fs-small mt-2&quot;</span><span class="o">&gt;</span><span class="err">✓</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">nbsp</span><span class="p">;</span><span class="w"> </span><span class="nx">Valid</span><span class="o">&lt;</span><span class="err">/span&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">span</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;error-msg&quot;</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;hide text-danger fw-400 fs-small mt-2&quot;</span><span class="o">&gt;&lt;</span><span class="err">/span&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;col-md-6 mb-5&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;fv-row&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="o">&gt;</span>
+<span class="w">                </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">label</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">,</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.client.password&#39;</span><span class="p">).</span><span class="s1">&#39;:&#39;</span><span class="w"> </span><span class="p">,[</span><span class="s1">&#39;class&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;form-label mb-3&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;position-relative&quot;</span><span class="o">&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="nx">input</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;form-control form-control-solid&quot;</span>
+<span class="w">                           </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;password&quot;</span><span class="w"> </span><span class="nx">placeholder</span><span class="o">=</span><span class="p">{{</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.client.password&#39;</span><span class="p">)}}</span><span class="w"> </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;password&quot;</span>
+<span class="w">                           </span><span class="nx">autocomplete</span><span class="o">=</span><span class="s2">&quot;off&quot;</span>
+<span class="w">                           </span><span class="nx">aria</span><span class="o">-</span><span class="nx">label</span><span class="o">=</span><span class="s2">&quot;Password&quot;</span><span class="w"> </span><span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">&quot;password&quot;</span><span class="o">&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="nx">span</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;position-absolute d-flex align-items-center top-0 bottom-0 end-0 me-4 input-icon input-password-hide cursor-pointer text-gray-600&quot;</span><span class="o">&gt;</span>
+<span class="w">                                </span><span class="o">&lt;</span><span class="nx">i</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;bi bi-eye-slash-fill&quot;</span><span class="o">&gt;&lt;</span><span class="err">/i&gt;</span>
+<span class="w">                        </span><span class="o">&lt;</span><span class="err">/span&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;col-md-6 mb-5&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;fv-row&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="o">&gt;</span>
+<span class="w">                </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">label</span><span class="p">(</span><span class="s1">&#39;confirmPassword&#39;</span><span class="p">,</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.client.confirm_password&#39;</span><span class="p">).</span><span class="s1">&#39;:&#39;</span><span class="w"> </span><span class="p">,[</span><span class="s1">&#39;class&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;form-label mb-3&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;position-relative&quot;</span><span class="o">&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="nx">input</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;form-control form-control-solid&quot;</span>
+<span class="w">                           </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;password&quot;</span>
+<span class="w">                           </span><span class="nx">placeholder</span><span class="o">=</span><span class="s2">&quot;{{__(&#39;messages.client.confirm_password&#39;)}}&quot;</span><span class="w"> </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;password_confirmation&quot;</span>
+<span class="w">                           </span><span class="nx">autocomplete</span><span class="o">=</span><span class="s2">&quot;off&quot;</span><span class="w"> </span><span class="nx">aria</span><span class="o">-</span><span class="nx">label</span><span class="o">=</span><span class="s2">&quot;Password&quot;</span><span class="w"> </span><span class="nx">data</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">&quot;password&quot;</span><span class="o">&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="nx">span</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;position-absolute d-flex align-items-center top-0 bottom-0 end-0 me-4 input-icon input-password-hide cursor-pointer text-gray-600&quot;</span><span class="o">&gt;</span>
+<span class="w">                               </span><span class="o">&lt;</span><span class="nx">i</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;bi bi-eye-slash-fill&quot;</span><span class="o">&gt;&lt;</span><span class="err">/i&gt;</span>
+<span class="w">                        </span><span class="o">&lt;</span><span class="err">/span&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;mb-3&quot;</span><span class="w"> </span><span class="nx">io</span><span class="o">-</span><span class="nx">image</span><span class="o">-</span><span class="nx">input</span><span class="o">=</span><span class="s2">&quot;true&quot;</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">label</span><span class="w"> </span><span class="k">for</span><span class="o">=</span><span class="s2">&quot;exampleInputImage&quot;</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;form-label&quot;</span><span class="o">&gt;</span><span class="p">{{</span><span class="w"> </span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.client.profile&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">}}</span><span class="o">:&lt;</span><span class="err">/label&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;d-block&quot;</span><span class="o">&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;image-picker&quot;</span><span class="o">&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;image previewImage&quot;</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;exampleInputImage&quot;</span>
+<span class="w">                     </span><span class="nx">style</span><span class="o">=</span><span class="s2">&quot;background-image: url(&#39;{{ !empty($user-&gt;profile_image) ? $user-&gt;profile_image : asset(&#39;assets/images/avatar.png&#39;) }}&#39;)&quot;</span><span class="o">&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="nx">span</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;picker-edit rounded-circle text-gray-500 fs-small&quot;</span><span class="w"> </span><span class="nx">data</span><span class="o">-</span><span class="nx">bs</span><span class="o">-</span><span class="nx">toggle</span><span class="o">=</span><span class="s2">&quot;tooltip&quot;</span>
+<span class="w">                      </span><span class="nx">title</span><span class="o">=</span><span class="s2">&quot;Change Profile&quot;</span><span class="o">&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="nx">label</span><span class="o">&gt;</span>
+<span class="w">                        </span><span class="o">&lt;</span><span class="nx">i</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;fa-solid fa-pen&quot;</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;profileImageIcon&quot;</span><span class="o">&gt;&lt;</span><span class="err">/i&gt;</span>
+<span class="w">                            </span><span class="o">&lt;</span><span class="nx">input</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;file&quot;</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">&quot;profile_image&quot;</span><span class="w"> </span><span class="nx">name</span><span class="o">=</span><span class="s2">&quot;profile&quot;</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;image-upload d-none&quot;</span>
+<span class="w">                                   </span><span class="nx">accept</span><span class="o">=</span><span class="s2">&quot;.png, .jpg, .jpeg&quot;</span><span class="o">/&gt;</span>
+<span class="w">                    </span><span class="o">&lt;</span><span class="err">/label&gt;</span>
+<span class="w">                </span><span class="o">&lt;</span><span class="err">/span&gt;</span>
+<span class="w">            </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;form-text&quot;</span><span class="o">&gt;</span><span class="nx">Allowed</span><span class="w"> </span><span class="nx">file</span><span class="w"> </span><span class="nx">types</span><span class="o">:</span><span class="w"> </span><span class="nx">png</span><span class="p">,</span><span class="w"> </span><span class="nx">jpg</span><span class="p">,</span><span class="w"> </span><span class="nx">jpeg</span><span class="p">.</span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
+<span class="o">&lt;</span><span class="nx">div</span><span class="w"> </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;float-end d-flex&quot;</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="p">{{</span><span class="w"> </span><span class="nx">Form</span><span class="o">::</span><span class="nx">submit</span><span class="p">(</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.common.save&#39;</span><span class="p">),[</span><span class="s1">&#39;class&#39;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="s1">&#39;btn btn-primary me-3&#39;</span><span class="p">])</span><span class="w"> </span><span class="p">}}</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">a</span><span class="w"> </span><span class="nx">href</span><span class="o">=</span><span class="s2">&quot;{{ route(&#39;users.index&#39;) }}&quot;</span><span class="w"> </span><span class="nx">type</span><span class="o">=</span><span class="s2">&quot;reset&quot;</span>
+<span class="w">       </span><span class="kd">class</span><span class="o">=</span><span class="s2">&quot;btn btn-secondary btn-active-light-primary&quot;</span><span class="o">&gt;</span><span class="p">{{</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;messages.common.discard&#39;</span><span class="p">)}}</span><span class="o">&lt;</span><span class="err">/a&gt;</span>
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
+</code></pre></div>
+<p>This HTML and Laravel Blade code represents a form for editing an admin user's details. It includes form fields for updating various attributes of the admin user, such as their name, email, contact information, password, and profile image. Let's break down the components of this code:</p>
+<ol>
+<li>
+<p><strong>Name, Email, and Contact Fields</strong>:
+   These fields allow the admin's first name, last name, email, and contact number to be edited. The <code>Form::label()</code> method is used to create labels for each field, and the <code>Form::text()</code> and <code>Form::tel()</code> methods generate input fields for editing the data. The <code>Form::hidden()</code> method creates a hidden input field for the region code associated with the contact number.</p>
+</li>
+<li>
+<p><strong>Password and Confirm Password Fields</strong>:
+   These fields are used for updating the admin's password. Similar to the other fields, <code>Form::label()</code> and input elements are used. However, the password fields are of type "password" and include a password toggle feature using Bootstrap icons for showing and hiding the password.</p>
+</li>
+<li>
+<p><strong>Profile Image Field</strong>:
+   This section allows the admin's profile image to be uploaded or changed. The current profile image is displayed as a background image. A file input element is hidden, and clicking on an icon triggers the file selection dialog. The accepted file types are limited to PNG, JPG, and JPEG, as indicated in the form text.</p>
+</li>
+<li>
+<p><strong>Buttons for Submitting and Discarding Changes</strong>:
+   Two buttons are provided at the bottom of the form: one for submitting the changes and one for discarding them. The <code>Form::submit()</code> method creates a button for saving changes with a primary style. The <code>&lt;a&gt;</code> tag serves as a link to navigate back to the list of users without saving the changes.</p>
+</li>
+<li>
+<p><strong>Bootstrap Grid Layout</strong>:
+   The form fields are organized using the Bootstrap grid layout classes. It's divided into columns with responsive classes to ensure proper spacing and alignment on different screen sizes.</p>
+</li>
+</ol>
+<p>Overall, this Blade view template provides an interface for editing an admin user's details, including their name, email, contact information, password, and profile image. It follows best practices by using Laravel's form binding methods and integrates Bootstrap components for styling and layout.</p>
+<h3 id="show-details-of-admin">Show details of admin</h3>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-body&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-xxl-5 col-12&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span>
+          <span class="na">class</span><span class="o">=</span><span class="s">&quot;d-sm-flex align-items-center mb-5 mb-xxl-0 text-center text-sm-start&quot;</span>
+        <span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;image image-circle image-small&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;{{ $user-&gt;profile_image }}&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;user&quot;</span> <span class="p">/&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ms-0 ms-md-10 mt-5 mt-sm-0&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>{{ $user-&gt;full_name }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span>
+              <span class="na">href</span><span class="o">=</span><span class="s">&quot;mailto:{{ $user-&gt;email }}&quot;</span>
+              <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-gray-600 text-decoration-none fs-4&quot;</span>
+            <span class="p">&gt;</span>
+              {{ $user-&gt;email }}
+            <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mt-7 overflow-hidden&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span>
+    <span class="na">class</span><span class="o">=</span><span class="s">&quot;nav nav-tabs mb-5 pb-1 overflow-auto flex-nowrap text-nowrap&quot;</span>
+    <span class="na">id</span><span class="o">=</span><span class="s">&quot;myTab&quot;</span>
+    <span class="na">role</span><span class="o">=</span><span class="s">&quot;tablist&quot;</span>
+  <span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;nav-item position-relative me-7 mb-3&quot;</span> <span class="na">role</span><span class="o">=</span><span class="s">&quot;presentation&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span>
+        <span class="na">class</span><span class="o">=</span><span class="s">&quot;nav-link active p-0&quot;</span>
+        <span class="na">id</span><span class="o">=</span><span class="s">&quot;overview-tab&quot;</span>
+        <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&quot;tab&quot;</span>
+        <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&quot;#overview&quot;</span>
+        <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span>
+        <span class="na">role</span><span class="o">=</span><span class="s">&quot;tab&quot;</span>
+        <span class="na">aria-controls</span><span class="o">=</span><span class="s">&quot;overview&quot;</span>
+        <span class="na">aria-selected</span><span class="o">=</span><span class="s">&quot;true&quot;</span>
+      <span class="p">&gt;</span>
+        Overview
+      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-body&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;tab-content&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;myTabContent&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span>
+          <span class="na">class</span><span class="o">=</span><span class="s">&quot;tab-pane fade show active&quot;</span>
+          <span class="na">id</span><span class="o">=</span><span class="s">&quot;overview&quot;</span>
+          <span class="na">role</span><span class="o">=</span><span class="s">&quot;tabpanel&quot;</span>
+          <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&quot;overview-tab&quot;</span>
+        <span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span>
+              <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-6 d-flex flex-column mb-md-10 mb-5 {{ empty($user-&gt;contact) ? &#39;d-none&#39; : &#39;&#39; }}&quot;</span>
+            <span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pb-2 fs-4 text-gray-600&quot;</span>
+                <span class="p">&gt;</span>{{ __(&#39;messages.user.contact_number&#39;) }} :<span class="p">&lt;/</span><span class="nt">label</span>
+              <span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fs-4 text-gray-800&quot;</span><span class="p">&gt;</span>{{ $user-&gt;contact }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-sm-6 d-flex flex-column mb-md-10 mb-5&quot;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pb-2 fs-4 text-gray-600&quot;</span>
+                <span class="p">&gt;</span>Registered Date:<span class="p">&lt;/</span><span class="nt">label</span>
+              <span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fs-4 text-gray-800&quot;</span>
+                <span class="p">&gt;</span>{{
+                \Carbon\Carbon::parse($user-&gt;created_at)-&gt;translatedFormat(&#39;jS
+                \of F Y&#39;) }}<span class="p">&lt;/</span><span class="nt">span</span>
+              <span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>This HTML code represents a view for displaying details of an admin user within a web application. The view is divided into several sections, each responsible for displaying different aspects of the admin's information. Let's break down the components of this code:</p>
+<ol>
+<li>
+<p><strong>User Information Card</strong>:
+   This section displays the admin user's profile image, full name, and email address in a card format. It uses Bootstrap classes for layout and alignment. The user's profile image is shown as a circular image. The user's full name is displayed as a heading, and their email address is shown as a link with a larger font size.</p>
+</li>
+<li>
+<p><strong>Navigation Tabs</strong>:
+   This section contains navigation tabs that allow the user to switch between different sections of information. It uses Bootstrap's tab component. However, in this example, there is only one active tab labeled "Overview."</p>
+</li>
+<li>
+<p><strong>Overview Tab Content</strong>:
+   This section contains the content of the "Overview" tab. It displays specific details about the admin user. It uses Bootstrap's tab content and tab pane components.</p>
+</li>
+<li>
+<p><strong>Contact Number (if available)</strong>:
+     This part displays the admin user's contact number if it's not empty. It uses a label and a span to display the contact number.</p>
+</li>
+<li>
+<p><strong>Registered Date</strong>:
+     This part displays the date when the admin user was registered. It converts the <code>created_at</code> attribute using Carbon, a date and time manipulation library for PHP. The date is displayed in a formatted style.</p>
+</li>
+</ol>
+<p>In summary, this Blade view template is designed to present detailed information about an admin user. It includes a profile image, full name, email address, and additional details such as contact number and registered date. The layout is organized using Bootstrap classes, and the view allows users to switch between different tabs to view specific information about the admin user.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>

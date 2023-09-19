@@ -1,0 +1,1332 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../Admin/dashboard/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
+    
+    
+      
+        <title>Authentication page - InfyInvoices</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#authentication-page" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="InfyInvoices" class="md-header__button md-logo" aria-label="InfyInvoices" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            InfyInvoices
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Authentication page
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Authentication page
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Admin/dashboard/" class="md-tabs__link">
+        Admin
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Client/dashboard/" class="md-tabs__link">
+        Client
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../layout/" class="md-tabs__link">
+      Layout
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="InfyInvoices" class="md-nav__button md-logo" aria-label="InfyInvoices" data-md-component="logo">
+      
+  <img src="../logo.png" alt="logo">
+
+    </a>
+    InfyInvoices
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Authentication page
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Authentication page
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-login-page" class="md-nav__link">
+    The login page
+  </a>
+  
+    <nav class="md-nav" aria-label="The login page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-page-title" class="md-nav__link">
+    Web page title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logo" class="md-nav__link">
+    Logo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sign-in-section" class="md-nav__link">
+    Sign in section
+  </a>
+  
+    <nav class="md-nav" aria-label="Sign in section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sign-in-title" class="md-nav__link">
+    Sign in Title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#form-register" class="md-nav__link">
+    Form register
+  </a>
+  
+    <nav class="md-nav" aria-label="Form register">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    Email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password" class="md-nav__link">
+    Password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remember_me-check" class="md-nav__link">
+    Remember_me check
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#login-button" class="md-nav__link">
+    Login button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forget-your-password" class="md-nav__link">
+    Forget your password?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-forgot-password-page" class="md-nav__link">
+    The forgot-password page
+  </a>
+  
+    <nav class="md-nav" aria-label="The forgot-password page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-web-page-title" class="md-nav__link">
+    The web page title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logo_1" class="md-nav__link">
+    Logo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-container" class="md-nav__link">
+    the container
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#form" class="md-nav__link">
+    Form
+  </a>
+  
+    <nav class="md-nav" aria-label="Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#email_1" class="md-nav__link">
+    Email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-submit-button" class="md-nav__link">
+    the submit button
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Admin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Admin
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/dashboard/" class="md-nav__link">
+        Dashboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/admins/" class="md-nav__link">
+        admins
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/clients/" class="md-nav__link">
+        clients
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/categories/" class="md-nav__link">
+        categories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/Taxes/" class="md-nav__link">
+        Taxes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/Products/" class="md-nav__link">
+        Products
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/Quotes/" class="md-nav__link">
+        Quotes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/invoices/" class="md-nav__link">
+        invoices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/Transactions/" class="md-nav__link">
+        Transactions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/Payments/" class="md-nav__link">
+        Payments
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/InvoiceTemplates/" class="md-nav__link">
+        Invoice Templates
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Admin/Settings/" class="md-nav__link">
+        Settings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Client
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Client
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Client/dashboard/" class="md-nav__link">
+        Dashboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Client/quotes/" class="md-nav__link">
+        Quotes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Client/invoices/" class="md-nav__link">
+        Invoices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Client/transactions/" class="md-nav__link">
+        Transactions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layout/" class="md-nav__link">
+        Layout
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="authentication-page">Authentication page</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The authentication Page is the entry point for users with existing accounts to access the application. It provides a secure way for users to authenticate themselves using their registered email or username and password.</p>
+<p>The Login Page is accessible at: <a href="https://invoices.infyom.com/login">https://invoices.infyom.com/login</a></p>
+<p>The code bellow creates a route for the login page, which is accessible at the '/login' URL path.<br>
+The <code>AuthenticatedSessionController@create</code> method is responsible for handling the display of the login form. The route is protected by the 'guest' middleware, ensuring that only unauthenticated users can access the login page.</p>
+<div class="highlight"><pre><span></span><code>Route::get<span class="o">(</span><span class="s1">&#39;/login&#39;</span>,<span class="w"> </span><span class="o">[</span>AuthenticatedSessionController::class,<span class="w"> </span><span class="s1">&#39;create&#39;</span><span class="o">])</span>
+<span class="w">    </span>-&gt;middleware<span class="o">(</span><span class="s1">&#39;guest&#39;</span><span class="o">)</span>
+<span class="w">    </span>-&gt;name<span class="o">(</span><span class="s1">&#39;login&#39;</span><span class="o">)</span><span class="p">;</span>
+</code></pre></div>
+<p>In the <code>AuthenticatedSessionController</code> we got:</p>
+<div class="highlight"><pre><span></span><code>class<span class="w"> </span>AuthenticatedSessionController<span class="w"> </span>extends<span class="w"> </span>Controller
+<span class="o">{</span>
+<span class="w">    </span>/**
+<span class="w">     </span>*<span class="w"> </span>Display<span class="w"> </span>the<span class="w"> </span>login<span class="w"> </span>view.
+<span class="w">     </span>*
+<span class="w">     </span>*<span class="w"> </span>@return<span class="w"> </span>Application<span class="p">|</span>Factory<span class="p">|</span>View<span class="p">|</span><span class="se">\I</span>lluminate<span class="se">\V</span>iew<span class="se">\V</span>iew
+<span class="w">     </span>*/
+<span class="w">    </span>public<span class="w"> </span><span class="k">function</span><span class="w"> </span>create<span class="o">()</span>
+<span class="w">    </span><span class="o">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span>view<span class="o">(</span><span class="s1">&#39;auth.login&#39;</span><span class="o">)</span><span class="p">;</span>
+<span class="w">    </span><span class="o">}</span>
+</code></pre></div>
+<p>When a user accesses the /login URL, the create() method of the AuthenticatedSessionController is invoked. The method then returns the <code>login.blade.php</code> view, which renders the login page for the user to enter their credentials and submit the login form.
+<br></p>
+<p>The route responsible of showing the Login page is <strong>InfyInvoices&gt;routes&gt;auth.php</strong>
+<br></p>
+<h2 id="the-login-page">The login page</h2>
+<h3 id="web-page-title">Web page title</h3>
+<p>The code bellow allows you to dynamically set the title of the web page using language translation. The translated text (e.g., "Login") will be displayed as the title of the page, which helps provide context to users and search engines.</p>
+<div class="highlight"><pre><span></span><code>@section<span class="o">(</span><span class="s1">&#39;title&#39;</span><span class="o">)</span>
+<span class="w">    </span><span class="o">{{</span><span class="w"> </span>__<span class="o">(</span><span class="s1">&#39;messages.login.login&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">}}</span>
+@endsection
+</code></pre></div>
+<h3 id="logo">Logo</h3>
+<p>To modify the logo picture we access to the file: <strong>ressources&gt;views&gt;auth&gt;login.blade.php</strong> <br> <br>
+in the line 7 we have the div: <br></p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span>
+  <span class="na">class</span><span class="o">=</span><span class="s">&quot;d-flex flex-column flex-column-fluid align-items-center justify-content-center p-4&quot;</span>
+<span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-12 text-center&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ url(&#39;/&#39;) }}&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;image mb-7 mb-sm-10 image-medium&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">img</span>
+        <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Logo&quot;</span>
+        <span class="na">src</span><span class="o">=</span><span class="s">&quot;{{ getLogoUrl() }}&quot;</span>
+        <span class="na">class</span><span class="o">=</span><span class="s">&quot;img-fluid object-contain&quot;</span>
+      <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>This is an HTML template code to create a centered container with a clickable logo image.</p>
+<p>Let's break down the code:</p>
+<ul>
+<li>The <code>&lt;a&gt;</code> element creates a hyperlink <code>&lt;a href="{{ url('/') }}"&gt;</code> that wraps around the logo image.</li>
+<li><code>href="{{ url('/') }}</code> sets the URL to the root of the application, making the logo clickable, and clicking it will take the user to the home page.</li>
+<li>The classes image, <code>mb-7, mb-sm-10</code>, and <code>image-medium</code> are used for styling.</li>
+<li>The <code>&lt;img&gt;</code> element displays the logo image with the URL fetched from the <code>getLogoUrl()</code> function <code>src="{{ getLogoUrl() }}"</code>.</li>
+<li>The <code>alt</code> attribute provides alternative text for the image, which is useful for accessibility and SEO purposes.</li>
+<li>The classes <code>img-fluid</code> and <code>object-contain</code> ensure that the image is responsive and fits within its container while maintaining its aspect ratio.</li>
+</ul>
+<p>To change the logo we have two options: <br>
+1.to replace <code>{{ getLogoUrl() }}</code> with a link to the picture with the correct path. <br>
+2.to replace <code>{{ getLogoUrl() }}</code> with the appropriate function that returns the logo URL in your actual application.</p>
+<p>To modify the <code>getLogoUrl()</code> function: <br>
+first, access to <strong>app&gt;helpers.php</strong> line 46:</p>
+<div class="highlight"><pre><span></span><code><span class="k">function</span><span class="w"> </span>getLogoUrl<span class="o">()</span>:<span class="w"> </span>string
+<span class="o">{</span>
+<span class="w">    </span>static<span class="w"> </span><span class="nv">$appLogo</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">(</span>empty<span class="o">(</span><span class="nv">$appLogo</span><span class="o">))</span><span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="nv">$appLogo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>Setting::where<span class="o">(</span><span class="s1">&#39;key&#39;</span>,<span class="w"> </span><span class="s1">&#39;=&#39;</span>,<span class="w"> </span><span class="s1">&#39;app_logo&#39;</span><span class="o">)</span>-&gt;first<span class="o">()</span><span class="p">;</span>
+<span class="w">    </span><span class="o">}</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span>asset<span class="o">(</span><span class="nv">$appLogo</span>-&gt;logo_url<span class="o">)</span><span class="p">;</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>It is a PHP function that fetches the URL of the application's logo image using Laravel's Eloquent ORM and returns it as a string. Here's what the function does step by step:</p>
+<ul>
+<li>
+<p>Declares the function getLogoUrl() with a return type of string.</p>
+</li>
+<li>
+<p>Defines a static variable named <code>$appLogo</code> . Static variables retain their value across function calls, ensuring that the logo data persists between invocations of the function. This avoids redundant database queries for the logo URL.</p>
+</li>
+<li>
+<p>Checks if <code>$appLogo</code> is empty (null or false) using the empty() function.</p>
+</li>
+<li>
+<p>If <code>$appLogo</code> is empty, it means the logo data hasn't been fetched yet. The function executes the code inside the if block to fetch the logo data.</p>
+</li>
+<li>
+<p>The line <code>$appLogo = Setting::where('key', '=', 'app_logo')-&gt;first();</code> queries the database using Laravel's Eloquent ORM. It searches the <strong>Setting model</strong> for a row with 'app_logo' as the value in the 'key' column. The first() method retrieves the first matching result as an object and assigns it to the <code>$appLogo</code> variable.</p>
+</li>
+<li>
+<p>Finally, the function returns the absolute URL of the logo image using the asset() function. The asset() function generates an absolute URL for the asset (logo image) using the provided relative path stored in <code>$appLogo-&gt;logo_url</code>.</p>
+</li>
+</ul>
+<p>In <strong>models&gt;setting.php:</strong>
+This code defines an accessor method getLogoUrlAttribute() in a Laravel Eloquent model. Its role is to provide the URL of a logo associated with the model instance. It retrieves the first related Media item (presumably representing an uploaded image), and if found, returns its full URL. If no related media is found, it returns the URL of a default logo image named "infyom.png" located in the assets directory. This allows you to easily access the logo's URL as if it were a regular attribute on the model, handling both existing logos and a default logo in case of absence.</p>
+<div class="highlight"><pre><span></span><code><span class="w">   </span>public<span class="w"> </span><span class="k">function</span><span class="w"> </span>getLogoUrlAttribute<span class="o">()</span>:<span class="w"> </span>string
+<span class="w">    </span><span class="o">{</span>
+<span class="w">        </span><span class="nv">$media</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">$this</span>-&gt;media-&gt;first<span class="o">()</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="o">(</span>!<span class="w"> </span>empty<span class="o">(</span><span class="nv">$media</span><span class="o">))</span><span class="w"> </span><span class="o">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nv">$media</span>-&gt;getFullUrl<span class="o">()</span><span class="p">;</span>
+<span class="w">        </span><span class="o">}</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span>asset<span class="o">(</span><span class="s1">&#39;assets/images/infyom.png&#39;</span><span class="o">)</span><span class="p">;</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<p><strong>N.B:</strong> We specified already in <strong>config&gt;filesystems.php</strong> that the storage of images going to be in <strong>app&gt;public</strong> .</p>
+<h3 id="sign-in-section">Sign in section</h3>
+<p>To sign in the application we have a <code>&lt;div&gt;</code> contains: <br></p>
+<h4 id="sign-in-title">Sign in Title</h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-center mb-7&quot;</span><span class="p">&gt;</span>{{ __(&#39;messages.login.sign_in&#39;) }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><code>('messages.login.sign_in')</code>: in Laravel is used for language localization and returns the translation of "Sign In" based on the user's preferred language.</p>
+<h4 id="form-register">Form register</h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;POST&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;{{ route(&#39;login&#39;) }}&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>The code represents an HTML form with a POST method that sends data to the
+"login" route in a Laravel application.</p>
+<h5 id="email">Email</h5>
+<p>The Email <code>&lt;div&gt;</code> contains:</p>
+<ul>
+<li>label with <code>__('messages.login.email').':'</code> that translate the word 'Email' to the user's preferred language.</li>
+<li>a normal input with a name,type id,bootstrap class for styling, required attribute specifies that the input field must be filled out before submitting the form, placeholder with a message can be translate to the user's preferred languag, autofocus that automatically sets focus on an input element when a page loads,<code>aria-describedby="emailHelp"</code> enhances input accessibility for visually impaired users.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mb-sm-7 mb-4&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-label&quot;</span><span class="p">&gt;</span>
+    {{ __(&#39;messages.login.email&#39;).&#39;:&#39; }}<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;required&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span>
+    <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span>
+    <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span>
+    <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span>
+    <span class="na">autofocus</span>
+    <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span>
+    <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;emailHelp&quot;</span>
+    <span class="na">required</span>
+    <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot; {{ __(&#39;messages.login.email&#39;) }}&quot;</span>
+  <span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h5 id="password">Password</h5>
+<p>The password div contains:</p>
+<ul>
+<li>
+<p>label with <code>__('messages.login.email').':'</code> that translate the word 'Email' to the user's preferred language.</p>
+</li>
+<li>
+<p>'if' statement checks if a particular route named <code>password.request</code> exists in the application's routing system. If the route exists, it displays an HTML anchor link with the text <code>Forget your password?</code> that points to the URL defined by the <code>password.request</code> route. The link is styled using the provided CSS classes. If the route does not exist, nothing is displayed.</p>
+</li>
+<li>a normal input with a <strong>name</strong>,<strong>type</strong> <strong>id</strong>,<strong>bootstrap class</strong> for styling, <strong>required</strong> attribute specifies that the input field must be filled out before submitting the form, <strong>placeholder</strong> with a message can be translate to the user's preferred language,<strong>aria-label</strong> This attribute provides an accessibility label for the input field,<strong>data-toggle</strong> This is a custom attribute, likely used with JavaScript or a JavaScript library, to enable some specific functionality related to password input. It might toggle password visibility to show/hide the actual password characters while typing.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mb-sm-7 mb-4&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;d-flex justify-content-between&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-label&quot;</span>
+      <span class="p">&gt;</span>{{ __(&#39;messages.login.password&#39;).&#39;:&#39; }}<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;required&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span>
+    <span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    @if (Route::has(&#39;password.request&#39;))
+    <span class="p">&lt;</span><span class="nt">a</span>
+      <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ route(&#39;password.request&#39;) }}&quot;</span>
+      <span class="na">class</span><span class="o">=</span><span class="s">&quot;link-info fs-6 text-decoration-none&quot;</span>
+    <span class="p">&gt;</span>
+      {{ __(&#39;messages.login.forget_your_password&#39;) }}
+    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    @endif
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mb-3 position-relative&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span>
+      <span class="na">name</span><span class="o">=</span><span class="s">&quot;password&quot;</span>
+      <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span>
+      <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span>
+      <span class="na">id</span><span class="o">=</span><span class="s">&quot;password&quot;</span>
+      <span class="na">required</span>
+      <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;{{ __(&#39;messages.login.password&#39;)}}&quot;</span>
+      <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Password&quot;</span>
+      <span class="na">data-toggle</span><span class="o">=</span><span class="s">&quot;password&quot;</span>
+    <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span>
+      <span class="na">class</span><span class="o">=</span><span class="s">&quot;position-absolute d-flex align-items-center top-0 bottom-0 end-0 me-4 input-icon input-password-hide cursor-pointer text-gray-600&quot;</span>
+    <span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;bi bi-eye-slash-fill&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h5 id="remember_me-check">Remember_me check</h5>
+<p>this code snippet creates a styled checkbox input with a label that displays "Remember me." When the user clicks on either the checkbox or the label, it will toggle the checkbox's state (checked or unchecked). The checkbox is typically used to provide users with an option to remember their login credentials on the website or application.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mb-sm-7 mb-4 form-check&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-check-input&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;remember_me&quot;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-check-label&quot;</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;remember_me&quot;</span><span class="p">&gt;</span>
+    {{ __(&#39;messages.login.remember_me&#39;) }}
+  <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h4 id="login-button">Login button</h4>
+<!-- login button  -->
+
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;d-grid&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="p">&gt;</span>
+    {{ __(&#39;messages.login.login&#39;) }}
+  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><br>
+<strong>What happened when we click on submit?</strong></p>
+<p>When the user clicks on the "Login" button, the form will be submitted, and the server-side logic will process the login attempt. The behavior depends on the correctness of the entered email and password: <br>
+1- Correct Email and Password:
+The form will be submitted to the <code>{{ route('login') }}</code> which refers to the controller:</p>
+<div class="highlight"><pre><span></span><code>Route::post<span class="o">(</span><span class="s1">&#39;/login&#39;</span>,<span class="w"> </span><span class="o">[</span>AuthenticatedSessionController::class,<span class="w"> </span><span class="s1">&#39;store&#39;</span><span class="o">])</span>
+<span class="w">    </span>-&gt;middleware<span class="o">(</span><span class="s1">&#39;guest&#39;</span><span class="o">)</span><span class="p">;</span>
+</code></pre></div>
+<p>The method <code>AuthenticatedSessionController</code>:</p>
+<div class="highlight"><pre><span></span><code>public<span class="w"> </span><span class="k">function</span><span class="w"> </span>store<span class="o">(</span>LoginRequest<span class="w"> </span><span class="nv">$request</span><span class="o">)</span>
+<span class="w">    </span><span class="o">{</span>
+<span class="w">        </span><span class="nv">$request</span>-&gt;authenticate<span class="o">()</span><span class="p">;</span>
+
+<span class="w">        </span><span class="nv">$request</span>-&gt;session<span class="o">()</span>-&gt;regenerate<span class="o">()</span><span class="p">;</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="o">(</span><span class="nv">$request</span>-&gt;user<span class="o">()</span>-&gt;hasRole<span class="o">(</span><span class="s1">&#39;admin&#39;</span><span class="o">))</span><span class="w"> </span><span class="o">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span>redirect<span class="o">()</span>-&gt;intended<span class="o">(</span>getDashboardURL<span class="o">())</span><span class="p">;</span>
+<span class="w">        </span><span class="o">}</span><span class="w"> </span>elseif<span class="w"> </span><span class="o">(</span><span class="nv">$request</span>-&gt;user<span class="o">()</span>-&gt;hasRole<span class="o">(</span><span class="s1">&#39;client&#39;</span><span class="o">))</span><span class="w"> </span><span class="o">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span>redirect<span class="o">()</span>-&gt;intended<span class="o">(</span>getClientDashboardURL<span class="o">())</span><span class="p">;</span>
+<span class="w">        </span><span class="o">}</span>
+<span class="w">    </span><span class="o">}</span>
+</code></pre></div>
+<ul>
+<li>The method is responsible for authenticating the user based on the provided login credentials.</li>
+<li>The 'LoginRequest' class is used to validate the submitted form data before processing.</li>
+<li>If the user's credentials are valid:</li>
+<li>The 'authenticate()' method is called to perform the authentication process, allowing the user to log in.</li>
+<li>
+<p>The session is regenerated for security purposes.</p>
+</li>
+<li>
+<p>Depending on the user's role, the user will be redirected to the corresponding dashboard page using the 'redirect()-&gt;intended()' method.</p>
+</li>
+<li>
+<p>If the user has the 'admin' role, they will be redirected to the admin dashboard using the 'getDashboardURL()' function.</p>
+</li>
+<li>
+<p>If the user has the 'client' role, they will be redirected to the client dashboard using the 'getClientDashboardURL()' function.</p>
+</li>
+<li>
+<p>If the user's credentials are invalid, the authentication process will fail, and the user will be redirected back to the login page with appropriate error messages.</p>
+</li>
+</ul>
+<p>the error code in <strong>resources&gt;views&gt;layouts&gt;errors.blade.php</strong></p>
+<div class="highlight"><pre><span></span><code>@if<span class="w"> </span><span class="o">(</span><span class="nv">$errors</span>-&gt;any<span class="o">())</span>
+<span class="w">    </span>&lt;div<span class="w"> </span><span class="nv">class</span><span class="o">=</span><span class="s2">&quot;alert alert-danger&quot;</span>&gt;
+<span class="w">        </span>&lt;div&gt;
+<span class="w">            </span>&lt;div<span class="w"> </span><span class="nv">class</span><span class="o">=</span><span class="s2">&quot;d-flex&quot;</span>&gt;
+<span class="w">                </span>&lt;i<span class="w"> </span><span class="nv">class</span><span class="o">=</span><span class="s2">&quot;fa-solid fa-face-frown me-5&quot;</span>&gt;&lt;/i&gt;
+<span class="w">                </span>&lt;span<span class="w"> </span><span class="nv">class</span><span class="o">=</span><span class="s2">&quot;mt-1&quot;</span>&gt;<span class="o">{{</span><span class="nv">$errors</span>-&gt;first<span class="o">()}}</span>&lt;/span&gt;
+<span class="w">            </span>&lt;/div&gt;
+<span class="w">        </span>&lt;/div&gt;
+<span class="w">    </span>&lt;/div&gt;
+@endif
+</code></pre></div>
+<p><strong>How we know if the user is an admin or client?</strong> <br>
+The route configuration bellow is a a middleware named 'xss', used to determine the redirection behavior based on the user's authentication status and role.</p>
+<div class="highlight"><pre><span></span><code>Route::middleware<span class="o">([</span><span class="s1">&#39;xss&#39;</span><span class="o">])</span>-&gt;group<span class="o">(</span><span class="k">function</span><span class="w"> </span><span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>Route::get<span class="o">(</span><span class="s1">&#39;/&#39;</span>,<span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="o">(</span>Auth::check<span class="o">())</span><span class="w"> </span><span class="o">{</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="o">(</span>Auth::user<span class="o">()</span>-&gt;hasRole<span class="o">(</span><span class="s1">&#39;admin&#39;</span><span class="o">))</span><span class="w"> </span><span class="o">{</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span>Redirect::to<span class="o">(</span>getDashboardURL<span class="o">())</span><span class="p">;</span>
+<span class="w">            </span><span class="o">}</span>
+
+<span class="w">            </span><span class="k">return</span><span class="w"> </span>Redirect::to<span class="o">(</span>getClientDashboardURL<span class="o">())</span><span class="p">;</span>
+<span class="w">        </span><span class="o">}</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span>redirect<span class="o">(</span>route<span class="o">(</span><span class="s1">&#39;login&#39;</span><span class="o">))</span><span class="p">;</span>
+<span class="w">    </span><span class="o">})</span><span class="p">;</span>
+</code></pre></div>
+<ul>
+<li>
+<p><code>Route::middleware(['xss'])-&gt;group(function () { ... });:</code> This defines a group of routes that will be processed by the 'xss' middleware. The 'xss' middleware could be used to protect against cross-site scripting (XSS) attacks.</p>
+</li>
+<li>
+<p><code>Route::get('/', function () { ... });:</code> This defines a GET route for the root URL '/'. <br>
+  Inside the closure function: <br>
+  <code>Auth::check()</code>: Checks if a user is authenticated.<br>
+  If the user is authenticated:<br>
+  <code>Auth::user()-&gt;hasRole('admin')</code>: Checks if the authenticated user has the 'admin' role.<br>
+  If the user has the 'admin' role, the function redirects to the dashboard URL obtained from getDashboardURL().<br>
+  If the user doesn't have the 'admin' role, the function redirects to the client dashboard URL obtained from getClientDashboardURL().<br>
+  If the user is not authenticated, the function redirects to the login route using redirect(route('login')).<br></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">function</span><span class="w"> </span>getDashboardURL<span class="o">()</span>:<span class="w"> </span>string
+<span class="o">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span>RouteServiceProvider::HOME<span class="p">;</span>
+<span class="o">}</span>
+
+
+<span class="k">function</span><span class="w"> </span>getClientDashboardURL<span class="o">()</span>:<span class="w"> </span>string
+<span class="o">{</span>
+<span class="w">   </span><span class="k">return</span><span class="w"> </span>RouteServiceProvider::CLIENT_HOME<span class="p">;</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>1- <strong>getDashboardURL()</strong>: This function returns the URL for the main dashboard of your application. It uses the <code>RouteServiceProvider::HOME</code> constant. Typically, this would be the default dashboard that is accessed by users who have an "admin" role or similar privileged access.</p>
+<p>2- <strong>getClientDashboardURL()</strong>: This function returns the URL for the client-specific dashboard of your application. It uses the <code>RouteServiceProvider::CLIENT_HOME</code> constant. This dashboard is likely intended for users who have a "client" role or similar non-administrative access.</p>
+<h4 id="forget-your-password">Forget your password?</h4>
+<p><code>Forgot your password?</code> is an anchor link in <strong>resources&gt;views&gt;auth&gt;login.blade.php</strong></p>
+<div class="highlight"><pre><span></span><code><span class="x">@if (Route::has(&#39;password.request&#39;))</span>
+<span class="x">        &lt;a href=&quot;{{ route(&#39;password.request&#39;) }}&quot; class=&quot;link-info fs-6 text-decoration-none&quot;&gt;</span>
+<span class="x">                 {{ __(&#39;messages.login.forget_your_password&#39;) }}</span>
+<span class="x">         &lt;/a&gt;</span>
+<span class="x">@endif</span>
+</code></pre></div>
+<p>the link reffers to 'password.request' route in <strong>routes&gt;auth.php</strong></p>
+<div class="highlight"><pre><span></span><code>Route::get<span class="o">(</span><span class="s1">&#39;/forgot-password&#39;</span>,<span class="w"> </span><span class="o">[</span>PasswordResetLinkController::class,<span class="w"> </span><span class="s1">&#39;create&#39;</span><span class="o">])</span>
+<span class="w">    </span>-&gt;middleware<span class="o">(</span><span class="s1">&#39;guest&#39;</span><span class="o">)</span>
+<span class="w">                </span>-&gt;name<span class="o">(</span><span class="s1">&#39;password.request&#39;</span><span class="o">)</span><span class="p">;</span>
+</code></pre></div>
+<p>This route definition establishes a route with the URL '/forgot-password', which points to the create() method of the <code>PasswordResetLinkController</code></p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span>public<span class="w"> </span><span class="k">function</span><span class="w"> </span>create<span class="o">()</span>
+<span class="w">    </span><span class="o">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span>view<span class="o">(</span><span class="s1">&#39;auth.forgot-password&#39;</span><span class="o">)</span><span class="p">;</span>
+<span class="w">    </span><span class="o">}</span>
+</code></pre></div>
+<p>when a user accesses the <code>/forgot-password</code> URL, the create() method of the controller is invoked. The method then returns the 'forgot-password.blade.php' view, which renders the "Forgot Password" page containing the form or link to initiate the password reset process.</p>
+<h2 id="the-forgot-password-page">The forgot-password page</h2>
+<p>The The forgot-password Page is accessible at: <a href="https://invoices.infyom.com/forgot-password">https://invoices.infyom.com/login</a></p>
+<p>The code bellow creates a route for the The forgot-password page, which is accessible at the
+'/The forgot-password' URL path.</p>
+<div class="highlight"><pre><span></span><code>Route::get<span class="o">(</span><span class="s1">&#39;/forgot-password&#39;</span>,<span class="w"> </span><span class="o">[</span>PasswordResetLinkController::class,<span class="w"> </span><span class="s1">&#39;create&#39;</span><span class="o">])</span>
+<span class="w">    </span>-&gt;middleware<span class="o">(</span><span class="s1">&#39;guest&#39;</span><span class="o">)</span>
+<span class="w">                </span>-&gt;name<span class="o">(</span><span class="s1">&#39;password.request&#39;</span><span class="o">)</span><span class="p">;</span>
+</code></pre></div>
+<p>The <strong>GET</strong> route is used to display the initial form where users can enter their email address to receive a password reset link.<br></p>
+<h3 id="the-web-page-title">The web page title</h3>
+<p>The code bellow allows you to dynamically set the title of the web page using language translation. The translated text (e.g., "Forgot Password") will be displayed as the title of the page, which helps provide context to users and search engines.</p>
+<div class="highlight"><pre><span></span><code><span class="o">{</span>@section<span class="o">(</span><span class="s1">&#39;title&#39;</span><span class="o">)</span>
+<span class="w">    </span><span class="o">{{</span>__<span class="o">(</span><span class="s1">&#39; Forgot Password&#39;</span><span class="o">)}}</span>
+@endsection<span class="o">}</span>
+</code></pre></div>
+<h3 id="logo_1">Logo</h3>
+<p>same as 'login page logo code '</p>
+<p>check it here: <a href="http://127.0.0.1:8000/Login/#logo">http://docummentation.test/Login/#logo</a></p>
+<h3 id="the-container">the container</h3>
+<p>contains the text 'Forgot your password? No problem. Just let us know your email address
+and we will email you a password reset link that will allow you to choose a
+new one.' in user's preffered language</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-center mb-7&quot;</span><span class="p">&gt;</span>{{__(&#39;Forgot Password ?&#39;)}}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fw-bold fs-4 mb-5 text-center&quot;</span><span class="p">&gt;</span>
+  Enter your email to reset your password.
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fs-4 text-center mb-5&quot;</span><span class="p">&gt;</span>
+  {{ __(&#39;Forgot your password? No problem. Just let us know your email address
+  and we will email you a password reset link that will allow you to choose a
+  new one.&#39;) }}
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="form">Form</h3>
+<p>the form will send data to:</p>
+<p><code>&lt;form class="form w-100" method="POST" action="{{ route('password.email') }}"&gt;</code></p>
+<p>refers to the route:</p>
+<div class="highlight"><pre><span></span><code>Route::post<span class="o">(</span><span class="s1">&#39;/forgot-password&#39;</span>,<span class="w"> </span><span class="o">[</span>PasswordResetLinkController::class,<span class="w"> </span><span class="s1">&#39;store&#39;</span><span class="o">])</span>
+<span class="w">                </span>-&gt;middleware<span class="o">(</span><span class="s1">&#39;guest&#39;</span><span class="o">)</span>
+<span class="w">                </span>-&gt;name<span class="o">(</span><span class="s1">&#39;password.email&#39;</span><span class="o">)</span><span class="p">;</span>
+</code></pre></div>
+<p>The <strong>POST</strong> route is used to submit the email address and initiate the process of sending a password reset link to the user's email. <br></p>
+<div class="highlight"><pre><span></span><code>class<span class="w"> </span>PasswordResetLinkController<span class="w"> </span>extends<span class="w"> </span>Controller
+<span class="o">{</span>
+<span class="w">    </span>/**
+<span class="w">     </span>*<span class="w"> </span>Display<span class="w"> </span>the<span class="w"> </span>password<span class="w"> </span>reset<span class="w"> </span>link<span class="w"> </span>request<span class="w"> </span>view.
+<span class="w">     </span>*
+<span class="w">     </span>*<span class="w"> </span>@return<span class="w"> </span><span class="se">\I</span>lluminate<span class="se">\V</span>iew<span class="se">\V</span>iew
+<span class="w">     </span>*/
+<span class="w">    </span>public<span class="w"> </span><span class="k">function</span><span class="w"> </span>create<span class="o">()</span>
+<span class="w">    </span><span class="o">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span>view<span class="o">(</span><span class="s1">&#39;auth.forgot-password&#39;</span><span class="o">)</span><span class="p">;</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="w">    </span>/**
+<span class="w">     </span>*<span class="w"> </span>Handle<span class="w"> </span>an<span class="w"> </span>incoming<span class="w"> </span>password<span class="w"> </span>reset<span class="w"> </span>link<span class="w"> </span>request.
+<span class="w">     </span>*
+<span class="w">     </span>*<span class="w"> </span>@param<span class="w">  </span><span class="se">\I</span>lluminate<span class="se">\H</span>ttp<span class="se">\R</span>equest<span class="w">  </span><span class="nv">$request</span>
+<span class="w">     </span>*<span class="w"> </span>@return<span class="w"> </span><span class="se">\I</span>lluminate<span class="se">\H</span>ttp<span class="se">\R</span>edirectResponse
+<span class="w">     </span>*
+<span class="w">     </span>*<span class="w"> </span>@throws<span class="w"> </span><span class="se">\I</span>lluminate<span class="se">\V</span>alidation<span class="se">\V</span>alidationException
+<span class="w">     </span>*/
+<span class="w">    </span>public<span class="w"> </span><span class="k">function</span><span class="w"> </span>store<span class="o">(</span>Request<span class="w"> </span><span class="nv">$request</span><span class="o">)</span>
+<span class="w">    </span><span class="o">{</span>
+<span class="w">        </span><span class="nv">$request</span>-&gt;validate<span class="o">([</span>
+<span class="w">            </span><span class="s1">&#39;email&#39;</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="s1">&#39;required|email&#39;</span>,
+<span class="w">        </span><span class="o">])</span><span class="p">;</span>
+
+<span class="w">        </span>//<span class="w"> </span>We<span class="w"> </span>will<span class="w"> </span>send<span class="w"> </span>the<span class="w"> </span>password<span class="w"> </span>reset<span class="w"> </span>link<span class="w"> </span>to<span class="w"> </span>this<span class="w"> </span>user.<span class="w"> </span>Once<span class="w"> </span>we<span class="w"> </span>have<span class="w"> </span>attempted
+<span class="w">        </span>//<span class="w"> </span>to<span class="w"> </span>send<span class="w"> </span>the<span class="w"> </span>link,<span class="w"> </span>we<span class="w"> </span>will<span class="w"> </span>examine<span class="w"> </span>the<span class="w"> </span>response<span class="w"> </span><span class="k">then</span><span class="w"> </span>see<span class="w"> </span>the<span class="w"> </span>message<span class="w"> </span>we
+<span class="w">        </span>//<span class="w"> </span>need<span class="w"> </span>to<span class="w"> </span>show<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>user.<span class="w"> </span>Finally,<span class="w"> </span>we<span class="err">&#39;</span>ll<span class="w"> </span>send<span class="w"> </span>out<span class="w"> </span>a<span class="w"> </span>proper<span class="w"> </span>response.
+<span class="w">        </span><span class="nv">$status</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>Password::sendResetLink<span class="o">(</span>
+<span class="w">            </span><span class="nv">$request</span>-&gt;only<span class="o">(</span><span class="s1">&#39;email&#39;</span><span class="o">)</span>
+<span class="w">        </span><span class="o">)</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nv">$status</span><span class="w"> </span><span class="o">==</span><span class="w"> </span>Password::RESET_LINK_SENT
+<span class="w">                    </span>?<span class="w"> </span>back<span class="o">()</span>-&gt;with<span class="o">(</span><span class="s1">&#39;status&#39;</span>,<span class="w"> </span>__<span class="o">(</span><span class="nv">$status</span><span class="o">))</span>
+<span class="w">                    </span>:<span class="w"> </span>back<span class="o">()</span>-&gt;withInput<span class="o">(</span><span class="nv">$request</span>-&gt;only<span class="o">(</span><span class="s1">&#39;email&#39;</span><span class="o">))</span>
+<span class="w">                            </span>-&gt;withErrors<span class="o">([</span><span class="s1">&#39;email&#39;</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span>__<span class="o">(</span><span class="nv">$status</span><span class="o">)])</span><span class="p">;</span>
+<span class="w">    </span><span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<h4 id="email_1">Email</h4>
+<p>an email input with attributes</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mb-4&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-label&quot;</span><span class="p">&gt;</span>
+      {{ __(&#39;Email&#39;).&#39;:&#39; }}<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;required&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span>
+      <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span>
+      <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span>
+      <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span>
+      <span class="na">value</span><span class="o">=</span><span class="s">&quot;{{ old(&#39;email&#39;) }}&quot;</span>
+      <span class="na">required</span>
+      <span class="na">autofocus</span>
+      <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span>
+      <span class="na">autocomplete</span><span class="o">=</span><span class="s">&quot;off&quot;</span>
+      <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;{{ __(&#39;Email&#39;) }}&quot;</span>
+    <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h4 id="the-submit-button">the submit button</h4>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group col-sm-12 d-flex text-start justify-content-center&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;indicator-label&quot;</span><span class="p">&gt;</span> {{ __(&#39;Email Password Reset Link&#39;) }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{{ route(&#39;login&#39;) }}&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-secondary my-0 ms-5 me-0&quot;</span>
+    <span class="p">&gt;</span>{{__(&#39;messages.common.cancel&#39;)}}<span class="p">&lt;/</span><span class="nt">a</span>
+  <span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>this code snippet creates a password reset form with buttons for submitting the request and canceling the operation, while also supporting localization through language translations.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
